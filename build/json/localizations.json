@@ -1,0 +1,812 @@
+{
+  "ru": {
+    "misc": {
+      "mainTitle": "iFOBS",
+      "companyName": "CS Ltd.",
+      "mainMenu": [
+        {
+          "text": "Преимущества",
+          "slide": "0"
+          },
+        {
+          "text": "Банкам",
+          "slide": "1"
+          },
+        {
+          "text": "Корпоративным клиентам",
+          "slide": "2"
+          },
+        {
+          "text": "Частным клиентам",
+          "slide": "3"
+          },
+        {
+          "text": "Безопасность",
+          "slide": "4"
+          },
+        {
+          "text": "iFOBS.Mobile",
+          "slide": "5"
+          },
+        {
+          "text": "Контакты",
+          "slide": "6"
+        }
+      ],
+      "welcomeMessage": "Добро пожаловать в интернет-банкинг",
+      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS"
+    },
+    "slides": {
+      "advantages": {
+        "slideHeader": "Пять причин для выбора",
+        "slideLists": [
+          {
+            "priority": "first",
+            "title": "Опыт",
+            "list": [
+              "<b>13 лет</b><br/> на рынке",
+              "Более<br/> <b>1 000 000</b><br/> пользователей",
+              "В <b>62</b> банках"
+            ]},
+          {
+            "priority": "second",
+            "title": "Интеграция",
+            "list": [
+              "Автоматизированные <br/> банковские системы",
+              "Учетные системы <br/> предприятия",
+              "CRM-системы",
+              "Карточные системы <br/> и процессинги",
+              "Провайдеры услуг"
+            ]},
+          {
+            "priority": "third",
+            "title": "Безопасность",
+            "list": [
+              "На уровне клиента <br/> и на уровне банка",
+              "Базовый и <br/> дополнительный пакеты",
+              "Проверенные временем и новейшие технологии"
+            ]},
+          {
+            "priority": "fourth",
+            "title": "Сервисы",
+            "list": [
+              "Корпоративным клиентам",
+              "Частным клиентам",
+              "Банкам",
+              "Мобильный банкинг"
+            ]},
+          {
+            "priority": "fifth",
+            "title": "Дизайн",
+            "list": [
+              "Современный дизайн",
+              "Интуитивно <br/> понятный <br/> интерфейс",
+              "Поддержка <br/> корпоративного <br/> стиля банка"
+            ]
+          }
+        ]},
+      "bankservices": {
+        "svgTemplate": "true",
+        "slideHeader": "Сервисы <br/> <b>для банков</b>",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "medal",
+                "text": "Перспективный и современный канал продаж"
+              },
+              {
+                "icon": "timer",
+                "text": "Меньше времени на обслуживание простых операций, которые клиент выполняет в интернет-банкинге самостоятельно"
+              },
+              {
+                "icon": "chart",
+                "text": "Больше операций &mdash; больше доходов"
+              },
+              {
+                "icon": "keyhole",
+                "text": "Безопасность данных обеспечена в соответствии <br/> с требованиями регуляторов"
+              },
+              {
+                "icon": "stopwatch",
+                "text": "Быстрое подключение новых услуг и продуктов"
+              }
+            ]}
+        ]},
+      "corporatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Корпоративным</b> клиентам",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "info",
+                "text": "Полная информация &mdash; включая данные по всей подчиненной структуре"
+              },
+              {
+                "icon": "steering",
+                "text": "Полный контроль &mdash; авторизация платежей согласно бизнес-процессу корпорации"
+              },
+              {
+                "icon": "files",
+                "text": "Массовые операции &mdash; при необходимости платежи загружаются и подписываются пачками"
+              },
+              {
+                "icon": "board",
+                "text": "Cash management &mdash; самостоятельное управление потоками финансов"
+              },
+              {
+                "icon": "lock",
+                "text": "Безопасность &mdash; система надежно защищает деньги предприятия"
+              }
+            ]}
+        ]},
+      "privatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Частным</b> клиентам",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "globe",
+                "text": "Мобильность &mdash; доступ клиента к системе в любое удобное для него время  "
+              },
+              {
+                "icon": "mobile",
+                "text": "Многоканальность и кроссплатформенность &mdash; клиент может подключаться к интернет-банкингу с любого из своих устройств: ПК, ноутбука, планшета, мобильного телефона"
+              },
+              {
+                "icon": "folder",
+                "text": "Широкий набор услуг &mdash; платежи, управление договорами, покупка продуктов и услуг"
+              },
+              {
+                "icon": "like",
+                "text": "Просто и удобно в использовании &mdash; не требуется никаких специфических знаний"
+              },
+              {
+                "icon": "safety",
+                "text": "Безопасность &mdash; система надежно защищает деньги клиента"
+              }
+            ]}
+        ]},
+      "security": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Безопасность</b>",
+        "slideLists": [
+          {
+            "title": "<b>Базовый</b> уровень безопасности",
+            "list": [
+              {
+                "icon": "browser",
+                "text": "Авторизация пользователя на сервере по логину и паролю"
+              },
+              {
+                "icon": "key",
+                "text": "Защита канала обмена данными"
+              },
+              {
+                "icon": "writing",
+                "text": "Электронно-цифровая подпись"
+              }
+            ]},
+          {
+            "title": "<b>Дополнительный</b> уровень",
+            "list": [
+              {
+                "icon": "usb",
+                "text": "USB-токены"
+              },
+              {
+                "icon": "otpdevice",
+                "text": "OTP-устройства"
+              },
+              {
+                "icon": "softoken",
+                "text": "SOFT-токен"
+              }
+            ]
+          }
+        ]},
+      "ifobsmobile": {
+        "svgTemplate": "true",
+        "slideHeader": "iFOBS<b>.Mobile</b>",
+        "slideLists": [
+          {
+            "title": "<b>Корпоративным</b> клиентам",
+            "list": [
+              {
+                "icon": "bills",
+                "text": "Оплата счетов online"
+              },
+              {
+                "icon": "writing",
+                "text": "Удаленная авторизация платежных документов"
+              },
+              {
+                "icon": "list",
+                "text": "Контроль состояния <br/> счетов и платежей"
+              }
+            ]},
+          {
+            "title": "<b>Частным</b> клиентам",
+            "list": [
+              {
+                "icon": "cardinfo",
+                "text": "Информация о состоянии счетов и карт"
+              },
+              {
+                "icon": "time",
+                "text": "Пополнение депозита"
+              },
+              {
+                "icon": "moneyout",
+                "text": "Погашение кредита, переводы"
+              }
+            ]
+          }
+        ]},
+      "contacts": {
+        "slideHeader": "<b>Контакты</b>",
+        "contacts": {
+          "annotation": "Просто заполните небольшую анкету <br/> и мы с вами свяжемся",
+          "nameField": "Ваше имя",
+          "emailField": "Ваш e-mail",
+          "confirm": "Отправить",
+          "phone": "Тел.: ",
+          "phoneNumber": "+38 (057) 760-13-67",
+          "email": "e-mail: ",
+          "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
+          "kharkivAddress": "Харьков, Украина <br> ул. Тобольская, 42А",
+          "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
+          "kyivAddress": "Киев, Украина <br> ул. Пушкинская, 27",
+          "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
+          "copy": "Компания CS",
+          "copyLink": "http://csltd.com.ua"
+        }
+      }
+    }
+  },
+  "ua": {
+    "misc": {
+      "mainTitle": "iFOBS",
+      "companyName": "CS Ltd.",
+      "mainMenu": [
+        {
+          "text": "Переваги",
+          "slide": "0"
+        },
+        {
+          "text": "Банкам",
+          "slide": "1"
+        },
+        {
+          "text": "Корпоративним клієнтам",
+          "slide": "2"
+        },
+        {
+          "text": "Приватним клієнтам",
+          "slide": "3"
+        },
+        {
+          "text": "Безпека",
+          "slide": "4"
+        },
+        {
+          "text": "iFOBS.Mobile",
+          "slide": "5"
+        },
+        {
+          "text": "Контакти",
+          "slide": "6"
+        }
+      ],
+      "welcomeMessage": "Вітаємо в інтернет-банкінгу",
+      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS"
+    },
+    "slides": {
+      "advantages": {
+        "slideHeader": "П'ять причин для вибору",
+        "slideLists": [
+          {
+            "priority": "first",
+            "title": "Досвід",
+            "list": [
+              "<b>13 років </b><br/> на ринку",
+              "Понад <br/> <b>1 000 000</b><br/> користувачів",
+              "У <b>62</b> банках"
+            ]},
+          {
+            "priority": "second",
+            "title": "Інтеграція",
+            "list": [
+              "Автоматизовані  <br/> банківські системи",
+              "Облікові системи <br/> підприємства",
+              "CRM-системи",
+              "Карткові системи <br/> і процесинги",
+              "Провайдери послуг"
+            ]},
+          {
+            "priority": "third",
+            "title": "Безпека",
+            "list": [
+              "На рівні клієнта <br/> й на рівні банку",
+              "Базовий і <br/> додатковий пакети",
+              "Перевірені часом та новітні технології"
+            ]},
+          {
+            "priority": "fourth",
+            "title": "Сервіси",
+            "list": [
+              "Корпоративним клієнтам",
+              "Приватним клієнтам",
+              "Банкам",
+              "Мобільний банкінг"
+            ]},
+          {
+            "priority": "fifth",
+            "title": "Дизайн",
+            "list": [
+              "Сучасний дизайн",
+              "Інтуїтивно <br/> зрозумілий <br/> інтерфейс",
+              "Підтримка <br/> корпоративного <br/> стилю банку"
+            ]
+          }
+        ]},
+      "bankservices": {
+        "svgTemplate": "true",
+        "slideHeader": "Сервіси <br> <b>для банків</b>",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "medal",
+                "text": "Перспективний і сучасний канал продажу"
+              },
+              {
+                "icon": "timer",
+                "text": "Менше часу на обслуговування простих операцій, які клієнт виконує в інтернет-банкінгу самостійно"
+              },
+              {
+                "icon": "chart",
+                "text": "Більше операцій &mdash;більше прибуток"
+              },
+              {
+                "icon": "keyhole",
+                "text": "Безпека даних згідно з вимогами регуляторів"
+              },
+              {
+                "icon": "stopwatch",
+                "text": "Швидке підключення нових послуг і продуктів"
+              }
+            ]}
+        ]},
+      "corporatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Корпоративним</b> клієнтам",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "info",
+                "text": "Повна інформація &mdash;в тому числі дані <br/> по всій підлеглій структурі"
+              },
+              {
+                "icon": "steering",
+                "text": "Повний контроль &mdash;авторизація платежів згідно бізнес-процесу корпорації"
+              },
+              {
+                "icon": "files",
+                "text": "Масові операції &mdash;при необхідності платежі завантажуються і підписуються пачками"
+              },
+              {
+                "icon": "board",
+                "text": "Cash management &mdash;самостійне керування потоками фінансів"
+              },
+              {
+                "icon": "lock",
+                "text": "Безпека &mdash;система надійно захищає гроші підприємства"
+              }
+            ]}
+        ]},
+      "privatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Приватним</b> клієнтам",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "globe",
+                "text": "Мобільність &mdash;доступ клієнта <br/> до системи в будь-який зручний <br/> для нього час"
+              },
+              {
+                "icon": "mobile",
+                "text": "Багатоканальність та багатоплатформовість &mdash;клієнт може підключатися до інтернет-банкінгу з будь-якого зі своїх пристроїв: ПК, ноутбуку, планшету, мобільного телефону"
+              },
+              {
+                "icon": "folder",
+                "text": "Широкий набір послуг &mdash;платежі, керування угодами, придбання продуктів та послуг"
+              },
+              {
+                "icon": "like",
+                "text": "Просто і зручно у використанні &mdash;<br/> не потрібно мати ніяких спеціальних знань"
+              },
+              {
+                "icon": "safety",
+                "text": "Безпека &mdash;система надійно захищає гроші клієнта"
+              }
+            ]}
+        ]},
+      "security": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Безпека</b>",
+        "slideLists": [
+          {
+            "title": "<b>Базовий</b> рівень безпеки",
+            "list": [
+              {
+                "icon": "browser",
+                "text": "Авторизація користувача на сервері за логіном і паролем"
+              },
+              {
+                "icon": "key",
+                "text": "Захист каналу обміну даними"
+              },
+              {
+                "icon": "writing",
+                "text": "Електронно-цифровий підпис"
+              }
+            ]},
+          {
+            "title": "<b>Додатковий</b> рівень",
+            "list": [
+              {
+                "icon": "usb",
+                "text": "USB-токени"
+              },
+              {
+                "icon": "otpdevice",
+                "text": "OTP-пристрої"
+              },
+              {
+                "icon": "softoken",
+                "text": "SOFT-токен"
+              }
+            ]
+          }
+        ]},
+      "ifobsmobile": {
+        "svgTemplate": "true",
+        "slideHeader": "iFOBS<b>.Mobile</b>",
+        "slideLists": [
+          {
+            "title": "<b>Корпоративним</b> клієнтам",
+            "list": [
+              {
+                "icon": "bills",
+                "text": "Оплата рахунків online"
+              },
+              {
+                "icon": "writing",
+                "text": "Дистанційна авторизація платіжних документів"
+              },
+              {
+                "icon": "list",
+                "text": "Контроль стану <br/> рахунків і платежів"
+              }
+            ]},
+          {
+            "title": "<b>Приватним </b> клієнтам",
+            "list": [
+              {
+                "icon": "cardinfo",
+                "text": "Інформація про стан рахунків і карт"
+              },
+              {
+                "icon": "time",
+                "text": "Поповнення депозиту"
+              },
+              {
+                "icon": "moneyout",
+                "text": "Погашення кредиту, перекази"
+              }
+            ]
+          }
+        ]},
+      "contacts": {
+        "slideHeader": "<b>Контакти</b>",
+        "contacts": {
+          "annotation": "Просто заповніть невелику анкету <br> і ми з вами зв'яжемося",
+          "nameField": "Ваше ім'я",
+          "emailField": "Ваш e-mail",
+          "confirm": "Відправити",
+          "phone": "Тел.: ",
+          "phoneNumber": "+38 (057) 760-13-67",
+          "email": "e-mail: ",
+          "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
+          "kharkivAddress": "Харків, Україна <br> вул. Тобольська, 42А",
+          "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
+          "kyivAddress": "Київ, Україна <br> вул. Пушкінська, 27",
+          "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
+          "copy": "Компанія CS",
+          "copyLink": "http://csltd.com.ua/uk/golovna.html"
+        }
+      }
+    }
+  },
+  "en": {
+    "misc": {
+      "mainTitle": "iFOBS",
+      "companyName": "CS Ltd.",
+      "mainMenu": [
+        {
+          "text": "Advantages",
+          "slide": "0"
+        },
+        {
+          "text": "For banks",
+          "slide": "1"
+        },
+        {
+          "text": "For corporate",
+          "slide": "2"
+        },
+        {
+          "text": "For private",
+          "slide": "3"
+        },
+        {
+          "text": "Security",
+          "slide": "4"
+        },
+        {
+          "text": "iFOBS.Mobile",
+          "slide": "5"
+        },
+        {
+          "text": "Contacts",
+          "slide": "6"
+        }
+      ],
+      "welcomeMessage": "Welcome to online banking",
+      "learnMore": "LEARN MORE ABOUT iFOBS"
+    },
+    "slides": {
+      "advantages": {
+        "slideHeader": "Five reasons to choose",
+        "slideLists": [
+          {
+            "priority": "first",
+            "title": "Experience",
+            "list": [
+              "<b>13 years</b><br/> on the market",
+              "More than<br/> <b>1 000 000</b><br/> users",
+              "In <b>62</b> banks"
+            ]},
+          {
+            "priority": "second",
+            "title": "Integration",
+            "list": [
+              "Automated <br/> banking systems",
+              "Accounting systems <br/> of enterprises",
+              "CRM systems",
+              "Card systems <br/> and processing",
+              "Service providers"
+            ]},
+          {
+            "priority": "third",
+            "title": "Safety",
+            "list": [
+              "At the customer and <br/> at the bank level",
+              "Standard and additional <br/> packages",
+              "Time-proven and newest technologies"
+            ]},
+          {
+            "priority": "fourth",
+            "title": "Services",
+            "list": [
+              "For corporate customers",
+              "For private customers",
+              "For banks",
+              "Mobile banking"
+            ]},
+          {
+            "priority": "fifth",
+            "title": "Design",
+            "list": [
+              "Modern design",
+              "User-friendly interface",
+              "Supporting bank corporate style"
+            ]
+          }
+        ]},
+      "bankservices": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Bank</b> services",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "medal",
+                "text": "Promising and modern sales channel"
+              },
+              {
+                "icon": "timer",
+                "text": "Less time for servicing simple operations which customers perform themselves in online banking"
+              },
+              {
+                "icon": "chart",
+                "text": "More operations &mdash;more profit"
+              },
+              {
+                "icon": "keyhole",
+                "text": "Data safety in accordance with regulator requirements"
+              },
+              {
+                "icon": "stopwatch",
+                "text": "Fast adding of new products and services"
+              }
+            ]}
+        ]},
+      "corporatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Corporate</b> customers",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "info",
+                "text": "Complete information &mdash;including data about subordinate structures of the corporation"
+              },
+              {
+                "icon": "steering",
+                "text": "Full control &mdash;authorization of payments according to business process of the corporation"
+              },
+              {
+                "icon": "files",
+                "text": "Mass operations &mdash;payments can be uploaded and signed in batches"
+              },
+              {
+                "icon": "board",
+                "text": "Cash management &mdash;customers can manage financial flows of the corporation themselves"
+              },
+              {
+                "icon": "lock",
+                "text": "Safety &mdash;system protects money of the corporation"
+              }
+            ]}
+        ]},
+      "privatecustomers": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Private</b> customers",
+        "slideLists": [
+          {
+            "title": "",
+            "list": [
+              {
+                "icon": "globe",
+                "text": "Mobility &mdash;customers can access the system anytime and anywhere"
+              },
+              {
+                "icon": "mobile",
+                "text": "Multichannel and crossplaform &mdash;customers can connect to online banking from their PCs, laptops, tablets and smartphones"
+              },
+              {
+                "icon": "folder",
+                "text": "Wide range of services &mdash;payments, contract management, purchase of products and services"
+              },
+              {
+                "icon": "like",
+                "text": "Simple and comfortable to use &mdash;no need to have any special knowledge"
+              },
+              {
+                "icon": "safety",
+                "text": "Safety &mdash;system reliably protects money of the customer"
+              }
+            ]}
+        ]},
+      "security": {
+        "svgTemplate": "true",
+        "slideHeader": "<b>Security</b>",
+        "slideLists": [
+          {
+            "title": "<b>Basic</b> security level",
+            "list": [
+              {
+                "icon": "browser",
+                "text": "Standard identification by username and password"
+              },
+              {
+                "icon": "key",
+                "text": "Protecting the channel of communication"
+              },
+              {
+                "icon": "writing",
+                "text": "Digital signature"
+              }
+            ]},
+          {
+            "title": "<b>Additional</b> protection",
+            "list": [
+              {
+                "icon": "usb",
+                "text": "USB tokens"
+              },
+              {
+                "icon": "otpdevice",
+                "text": "OTP devices"
+              },
+              {
+                "icon": "softoken",
+                "text": "SOFToken"
+              }
+            ]
+          }
+        ]},
+      "ifobsmobile": {
+        "svgTemplate": "true",
+        "slideHeader": "iFOBS<b>.Mobile</b>",
+        "slideLists": [
+          {
+            "title": "For <b>Corporate</b> customers",
+            "list": [
+              {
+                "icon": "bills",
+                "text": "Paying bills online"
+              },
+              {
+                "icon": "writing",
+                "text": "Remote authorization of payments"
+              },
+              {
+                "icon": "list",
+                "text": "Monitoring the state of bills and payments"
+              }
+            ]},
+          {
+            "title": "For <b>private</b> customers",
+            "list": [
+              {
+                "icon": "cardinfo",
+                "text": "Information about the state of cards/accounts"
+              },
+              {
+                "icon": "time",
+                "text": "Replenishment of deposit accounts"
+              },
+              {
+                "icon": "moneyout",
+                "text": "Loan repayment, money transfers"
+              }
+            ]
+          }
+        ]},
+      "contacts": {
+        "slideHeader": "Contact <b>us</b>",
+        "contacts": {
+          "annotation": "Just complete the simple contact form <br/> and we will answer you",
+          "nameField": "Your name",
+          "emailField": "Your e-mail",
+          "confirm": "Confirm",
+          "phone": "Phone: ",
+          "phoneNumber": "+38 (057) 760-13-67",
+          "email": "e-mail: ",
+          "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
+          "kharkivAddress": "Khakiv, Ukraine <br> Toboloskaya street 42-А",
+          "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
+          "kyivAddress": "Kyiv, Ukraine <br> Pushkinskaya street 27",
+          "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
+          "copy": "CS Ltd",
+          "copyLink": "http://csltd.com.ua/en/home1.html"
+        }
+      }
+    }
+  }
+}
