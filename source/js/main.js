@@ -50,8 +50,9 @@ $(document).ready(function () {
 				var slidesAdvantagesSlideLists4Priority = data[lang].slides.advantages.slideLists[4].priority;
 				var slidesAdvantagesSlideLists4Title    = data[lang].slides.advantages.slideLists[4].title;
 				var slidesAdvantagesSlideLists4List     = data[lang].slides.advantages.slideLists[4].list;
+				//конец 2 слайда
 
-
+				//начало 3 слайда
 				var slidesAdvantagesBankservicesSvgTemplate            = data[lang].slides.bankservices.svgTemplate;
 				var slidesAdvantagesBankservicesSlideHeader            = data[lang].slides.bankservices.slideHeader;
 				var slidesAdvantagesBankservicesSlideLists             = data[lang].slides.bankservices.slideLists;
@@ -66,8 +67,9 @@ $(document).ready(function () {
 				var slidesAdvantagesBankservicesSlideListsListText3    = data[lang].slides.bankservices.slideLists[0].list[3].text;
 				var slidesAdvantagesBankservicesSlideListsListIcon4    = data[lang].slides.bankservices.slideLists[0].list[4].icon;
 				var slidesAdvantagesBankservicesSlideListsListText4    = data[lang].slides.bankservices.slideLists[0].list[4].text;
+				//конец 3 слайда
 
-
+				//начало 4 слайда
 				var slidesAdvantagesCorporatecustomersSvgTemplate            = data[lang].slides.corporatecustomers.svgTemplate;
 				var slidesAdvantagesCorporatecustomersSlideHeader            = data[lang].slides.corporatecustomers.slideHeader;
 				var slidesAdvantagesCorporatecustomersSlideLists             = data[lang].slides.corporatecustomers.slideLists;
@@ -82,8 +84,10 @@ $(document).ready(function () {
 				var slidesAdvantagesCorporatecustomersSlideListsListText3    = data[lang].slides.corporatecustomers.slideLists[0].list[3].text;
 				var slidesAdvantagesCorporatecustomersSlideListsListIcon4    = data[lang].slides.corporatecustomers.slideLists[0].list[4].icon;
 				var slidesAdvantagesCorporatecustomersSlideListsListText4    = data[lang].slides.corporatecustomers.slideLists[0].list[4].text;
+				//конец 4 слайда
 
 
+				//начало 5 слайда
 				var slidesAdvantagesPrivatecustomersSvgTemplate              = data[lang].slides.privatecustomers.svgTemplate;
 				var slidesAdvantagesPrivatecustomersSlideHeader              = data[lang].slides.privatecustomers.slideHeader;
 				var slidesAdvantagesPrivatecustomersSlideLists               = data[lang].slides.privatecustomers.slideLists;
@@ -98,46 +102,50 @@ $(document).ready(function () {
 				var slidesAdvantagesPrivatecustomersSlideListsListText3      = data[lang].slides.privatecustomers.slideLists[0].list[3].text;
 				var slidesAdvantagesPrivatecustomersSlideListsListIcon4      = data[lang].slides.privatecustomers.slideLists[0].list[4].icon;
 				var slidesAdvantagesPrivatecustomersSlideListsListText4      = data[lang].slides.privatecustomers.slideLists[0].list[4].text;
+				//конец 5 слайда
 
 
+				//начало 6 слайда
 				var slidesAdvantagesSecuritySvgTemplate            = data[lang].slides.security.svgTemplate;
 				var slidesAdvantagesSecuritySlideHeader            = data[lang].slides.security.slideHeader;
 				var slidesAdvantagesSecuritySlideLists             = data[lang].slides.security.slideLists;
-				var slidesAdvantagesSecuritySlideListsTitle        = data[lang].slides.security.slideLists[0].title;
+				var slidesAdvantagesSecuritySlideListsTitle1        = data[lang].slides.security.slideLists[0].title;
 				var slidesAdvantagesSecuritySlideListsListIcon0    = data[lang].slides.security.slideLists[0].list[0].icon;
 				var slidesAdvantagesSecuritySlideListsListText0    = data[lang].slides.security.slideLists[0].list[0].text;
 				var slidesAdvantagesSecuritySlideListsListIcon1    = data[lang].slides.security.slideLists[0].list[1].icon;
 				var slidesAdvantagesSecuritySlideListsListText1    = data[lang].slides.security.slideLists[0].list[1].text;
 				var slidesAdvantagesSecuritySlideListsListIcon2    = data[lang].slides.security.slideLists[0].list[2].icon;
 				var slidesAdvantagesSecuritySlideListsListText2    = data[lang].slides.security.slideLists[0].list[2].text;
-				var slidesAdvantagesSecuritySlideListsTitle        = data[lang].slides.security.slideLists[1].title;
-				var slidesAdvantagesSecuritySlideListsListIcon0    = data[lang].slides.security.slideLists[1].list[0].icon;
-				var slidesAdvantagesSecuritySlideListsListText0    = data[lang].slides.security.slideLists[1].list[0].text;
-				var slidesAdvantagesSecuritySlideListsListIcon1    = data[lang].slides.security.slideLists[1].list[1].icon;
-				var slidesAdvantagesSecuritySlideListsListText1    = data[lang].slides.security.slideLists[1].list[1].text;
-				var slidesAdvantagesSecuritySlideListsListIcon2    = data[lang].slides.security.slideLists[1].list[2].icon;
-				var slidesAdvantagesSecuritySlideListsListText2    = data[lang].slides.security.slideLists[1].list[2].text;
+				var slidesAdvantagesSecuritySlideListsTitle2        = data[lang].slides.security.slideLists[1].title;
+				var slidesAdvantagesSecuritySlideListsListIcon3    = data[lang].slides.security.slideLists[1].list[0].icon;
+				var slidesAdvantagesSecuritySlideListsListText3    = data[lang].slides.security.slideLists[1].list[0].text;
+				var slidesAdvantagesSecuritySlideListsListIcon4    = data[lang].slides.security.slideLists[1].list[1].icon;
+				var slidesAdvantagesSecuritySlideListsListText4    = data[lang].slides.security.slideLists[1].list[1].text;
+				var slidesAdvantagesSecuritySlideListsListIcon5    = data[lang].slides.security.slideLists[1].list[2].icon;
+				var slidesAdvantagesSecuritySlideListsListText5    = data[lang].slides.security.slideLists[1].list[2].text;
+				//конец 6 слайда
 
-
+				//начало 7 слайда
 				var slidesAdvantagesIfobsmobileSvgTemplate            = data[lang].slides.ifobsmobile.svgTemplate;
 				var slidesAdvantagesIfobsmobileSlideHeader            = data[lang].slides.ifobsmobile.slideHeader;
 				var slidesAdvantagesIfobsmobileSlideLists             = data[lang].slides.ifobsmobile.slideLists;
-				var slidesAdvantagesIfobsmobileSlideListsTitle        = data[lang].slides.ifobsmobile.slideLists[0].title;
+				var slidesAdvantagesIfobsmobileSlideListsTitle1        = data[lang].slides.ifobsmobile.slideLists[0].title;
 				var slidesAdvantagesIfobsmobileSlideListsListIcon0    = data[lang].slides.ifobsmobile.slideLists[0].list[0].icon;
 				var slidesAdvantagesIfobsmobileSlideListsListText0    = data[lang].slides.ifobsmobile.slideLists[0].list[0].text;
 				var slidesAdvantagesIfobsmobileSlideListsListIcon1    = data[lang].slides.ifobsmobile.slideLists[0].list[1].icon;
 				var slidesAdvantagesIfobsmobileSlideListsListText1    = data[lang].slides.ifobsmobile.slideLists[0].list[1].text;
 				var slidesAdvantagesIfobsmobileSlideListsListIcon2    = data[lang].slides.ifobsmobile.slideLists[0].list[2].icon;
 				var slidesAdvantagesIfobsmobileSlideListsListText2    = data[lang].slides.ifobsmobile.slideLists[0].list[2].text;
-				var slidesAdvantagesIfobsmobileSlideListsTitle        = data[lang].slides.ifobsmobile.slideLists[1].title;
-				var slidesAdvantagesIfobsmobileSlideListsListIcon0    = data[lang].slides.ifobsmobile.slideLists[1].list[0].icon;
-				var slidesAdvantagesIfobsmobileSlideListsListText0    = data[lang].slides.ifobsmobile.slideLists[1].list[0].text;
-				var slidesAdvantagesIfobsmobileSlideListsListIcon1    = data[lang].slides.ifobsmobile.slideLists[1].list[1].icon;
-				var slidesAdvantagesIfobsmobileSlideListsListText1    = data[lang].slides.ifobsmobile.slideLists[1].list[1].text;
-				var slidesAdvantagesIfobsmobileSlideListsListIcon2    = data[lang].slides.ifobsmobile.slideLists[1].list[2].icon;
-				var slidesAdvantagesIfobsmobileSlideListsListText2    = data[lang].slides.ifobsmobile.slideLists[1].list[2].text;
+				var slidesAdvantagesIfobsmobileSlideListsTitle2        = data[lang].slides.ifobsmobile.slideLists[1].title;
+				var slidesAdvantagesIfobsmobileSlideListsListIcon3    = data[lang].slides.ifobsmobile.slideLists[1].list[0].icon;
+				var slidesAdvantagesIfobsmobileSlideListsListText3    = data[lang].slides.ifobsmobile.slideLists[1].list[0].text;
+				var slidesAdvantagesIfobsmobileSlideListsListIcon4    = data[lang].slides.ifobsmobile.slideLists[1].list[1].icon;
+				var slidesAdvantagesIfobsmobileSlideListsListText4    = data[lang].slides.ifobsmobile.slideLists[1].list[1].text;
+				var slidesAdvantagesIfobsmobileSlideListsListIcon5    = data[lang].slides.ifobsmobile.slideLists[1].list[2].icon;
+				var slidesAdvantagesIfobsmobileSlideListsListText5    = data[lang].slides.ifobsmobile.slideLists[1].list[2].text;
+				//конец 7 слайда
 
-
+				//начало 8 слайда
 				var slidesAdvantagesIContactsSlideHeader              = data[lang].slides.contacts.slideHeader;
 				var slidesAdvantagesIContactsContactsAnnotation       = data[lang].slides.contacts.contacts.annotation;
 				var slidesAdvantagesIContactsContactsNameField        = data[lang].slides.contacts.contacts.nameField;
@@ -153,8 +161,9 @@ $(document).ready(function () {
 				var slidesAdvantagesIContactsContactsKyivMap          = data[lang].slides.contacts.contacts.kyivMap;
 				var slidesAdvantagesIContactsContactsCopy             = data[lang].slides.contacts.contacts.copy;
 				var slidesAdvantagesIContactsContactsCopyLink         = data[lang].slides.contacts.contacts.copyLink;
+				var slidesAdvantagesIContactsContactsDate             = data[lang].slides.contacts.contacts.date;
+				//конец 7 слайда
 
-				//alert(miscLearnMore);	
 
 				function local() {
 
@@ -171,6 +180,7 @@ $(document).ready(function () {
 				$('#mainTitle').text(miscMainTitle);
 				$('#welcomeMessage').text(miscWelcomeMessage);
 				$('#showMore').text(miscLearnMore);
+				//конец 1 слайда
 
 				//второй слайд
 				$('#five_reasons').text(slidesAdvantagesSlideHeader);
@@ -204,10 +214,79 @@ $(document).ready(function () {
 				$('#title_5_1').html(data[lang].slides.advantages.slideLists[4].list[0]);
 				$('#title_5_2').html(data[lang].slides.advantages.slideLists[4].list[1]);
 				$('#title_5_3').html(data[lang].slides.advantages.slideLists[4].list[2]);
+				//конец 2 слайа
 
+				//начало 3 слайда
+				$('#slide_3_title').html(slidesAdvantagesBankservicesSlideHeader);
+				$('#slide_3_num_1').html(slidesAdvantagesBankservicesSlideListsListText0);
+				$('#slide_3_num_2').html(slidesAdvantagesBankservicesSlideListsListText1);
+				$('#slide_3_num_3').html(slidesAdvantagesBankservicesSlideListsListText2);
+				$('#slide_3_num_4').html(slidesAdvantagesBankservicesSlideListsListText3);
+				$('#slide_3_num_5').html(slidesAdvantagesBankservicesSlideListsListText4);
+				//конец 3 слайда
+
+
+				//начало 4 слайда
+				$('#slide_4_title').html(slidesAdvantagesCorporatecustomersSlideHeader);
+				$('#slide_4_num_1').html(slidesAdvantagesCorporatecustomersSlideListsListText0);
+				$('#slide_4_num_2').html(slidesAdvantagesCorporatecustomersSlideListsListText1);
+				$('#slide_4_num_3').html(slidesAdvantagesCorporatecustomersSlideListsListText2);
+				$('#slide_4_num_4').html(slidesAdvantagesCorporatecustomersSlideListsListText3);
+				$('#slide_4_num_5').html(slidesAdvantagesCorporatecustomersSlideListsListText4);
+				//конец 4 слайда
+
+
+				//начало 5 слайда
+				$('#slide_5_title').html(slidesAdvantagesPrivatecustomersSlideHeader);
+				$('#slide_5_num_1').html(slidesAdvantagesPrivatecustomersSlideListsListText0);
+				$('#slide_5_num_2').html(slidesAdvantagesPrivatecustomersSlideListsListText1);
+				$('#slide_5_num_3').html(slidesAdvantagesPrivatecustomersSlideListsListText2);
+				$('#slide_5_num_4').html(slidesAdvantagesPrivatecustomersSlideListsListText3);
+				$('#slide_5_num_5').html(slidesAdvantagesPrivatecustomersSlideListsListText4);
+				//конец 5 слайда
+
+
+				//начало 6 слайда
+				$('#slide_6_title').html(slidesAdvantagesSecuritySlideHeader);
+				$('#slide_6_un_title_1').html(slidesAdvantagesSecuritySlideListsTitle1);
+				$('#slide_6_num_1').html(slidesAdvantagesSecuritySlideListsListText0);
+				$('#slide_6_num_2').html(slidesAdvantagesSecuritySlideListsListText1);
+				$('#slide_6_num_3').html(slidesAdvantagesSecuritySlideListsListText2);
+				$('#slide_6_un_title_2').html(slidesAdvantagesSecuritySlideListsTitle2);
+				$('#slide_6_num_4').html(slidesAdvantagesSecuritySlideListsListText3);
+				$('#slide_6_num_5').html(slidesAdvantagesSecuritySlideListsListText4);
+				$('#slide_6_num_6').html(slidesAdvantagesSecuritySlideListsListText5);
+				//конец 6 слайда
+
+
+				//начало 7 слайда
+				$('#slide_7_title').html(slidesAdvantagesIfobsmobileSlideHeader);
+				$('#slide_7_un_title_1').html(slidesAdvantagesIfobsmobileSlideListsTitle1);
+				$('#slide_7_num_1').html(slidesAdvantagesIfobsmobileSlideListsListText0);
+				$('#slide_7_num_2').html(slidesAdvantagesIfobsmobileSlideListsListText1);
+				$('#slide_7_num_3').html(slidesAdvantagesIfobsmobileSlideListsListText2);
+				$('#slide_7_un_title_2').html(slidesAdvantagesIfobsmobileSlideListsTitle2);
+				$('#slide_7_num_4').html(slidesAdvantagesIfobsmobileSlideListsListText3);
+				$('#slide_7_num_5').html(slidesAdvantagesIfobsmobileSlideListsListText4);
+				$('#slide_7_num_6').html(slidesAdvantagesIfobsmobileSlideListsListText5);
+				//конец 7 слайда
+
+
+				//начало 8 слайда
+				$('#slide_8_title').html(slidesAdvantagesIContactsSlideHeader);
+				
+				$('#phoneNumber').text(slidesAdvantagesIContactsContactsPhoneNumber);
+				$('#copyLink').text(slidesAdvantagesIContactsContactsCopyLink );
+				$('#phone').text(slidesAdvantagesIContactsContactsPhone);
+				$('#email').text(slidesAdvantagesIContactsContactsEmail);
+
+				$('#kyiv_adress').html(slidesAdvantagesIContactsContactsKyivAddress);
+				$('#kharkiv_adress').html(slidesAdvantagesIContactsContactsKharkivAddress);
+
+				$('#date').html(slidesAdvantagesIContactsContactsDate);
+				$('#cscompany').html(slidesAdvantagesIContactsContactsCopy);
 
 				}
-
 				local();
 			}
 		})
