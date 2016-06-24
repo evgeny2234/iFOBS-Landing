@@ -24,13 +24,15 @@
 	margin-right: 15px !important;
 }
 
-
+html {
+	overflow:  hidden;
+}
 
 
 
 
 body {
-	font: 1em/1.3 roboto,Arial,sans-serif;
+	font: 14px roboto,Arial,sans-serif;
     color: #FFF;
 	.menu_up_down {
 		position: fixed;
@@ -213,6 +215,11 @@ body {
 					> li {
 						color: #fff;
 						font-family: roboto;
+						font-size: 1.6vh;
+						//font-size: 1.142857em;
+						letter-spacing: 1px;
+						padding: 2em 5em;
+						list-style-type: none;
 					}
 				}
 			}
@@ -253,26 +260,26 @@ body {
 				> a {
 					cursor: default;
 					text-decoration: none;
-					> span {
-						transition: 3s;
-						cursor: default;
-						opacity: 0;
-						transition: 2s;
-						font-size: 2.1vw;
-						color: #fff;
-						font-family: roboto;
-					}
-				}
-				> .arrow_down {
-					margin: auto;
-					display: block;
-					width: 22px;
-					height: 22px;
-					background: transparent url(../img/background/darrow.png) to-repeat;
-					margin: auto;
+					transition: 3s;
 					cursor: default;
 					opacity: 0;
-					transition: 3s;
+					transition: 2s;
+					font-size: 2.1vw;
+					color: #fff;
+					font-family: roboto;
+					position: relative;
+					z-index: 10;
+						> .arrow_down {
+						margin: auto;
+						display: block;
+						width: 22px;
+						height: 22px;
+						background: transparent url(../img/background/darrow.png) to-repeat;
+						margin: auto;
+						cursor: default;
+						opacity: 0;
+						transition: 3s;
+					}
 				}
 			}
 		}
@@ -397,10 +404,9 @@ body {
 				}
 				> ul {
 					> li {
-						padding: 3em 6em;
-						list-style-type: none;
+						
 						&:nth-child(1) {
-							background: url(../img/svg/medal.svg) 25px 45px no-repeat;
+							background: url(../img/svg/medal.svg) 25px 35px no-repeat;
 							background-size: auto 35px;
 						}
 						&:nth-child(2) {
@@ -450,8 +456,7 @@ body {
 				}
 				> ul {
 					> li {
-						padding: 3em 6em;
-						list-style-type: none;
+						ist-style-type: none;
 						&:nth-child(1) {
 							background: url(../img/svg/info.svg) 25px 45px no-repeat;
 							background-size: auto 35px;
@@ -469,7 +474,7 @@ body {
 							background-size: auto 35px;
 						}
 						&:nth-child(5) {
-							background: url(../img/svg/lock.svg) 25px 45px no-repeat;
+							background: url(../img/svg/lock.svg) 25px 38px no-repeat;
 							background-size: auto 35px;
 						}
 					}
@@ -500,8 +505,7 @@ body {
 				}
 				> ul {
 					> li {
-						padding: 3em 6em;
-						list-style-type: none;
+						ist-style-type: none;
 						&:nth-child(1) {
 							background: url(../img/svg/globe.svg) 25px 45px no-repeat;
 							background-size: auto 35px;
@@ -519,7 +523,7 @@ body {
 							background-size: auto 35px;
 						}
 						&:nth-child(5) {
-							background: url(../img/svg/safety.svg) 25px 45px no-repeat;
+							background: url(../img/svg/safety.svg) 25px 37px no-repeat;
 							background-size: auto 35px;
 						}
 					}
@@ -577,36 +581,34 @@ body {
 				> ul {
 					&:nth-of-type(1) {
 						> li {
-							padding: 3em 6em;
 							list-style-type: none;
 							&:nth-child(1) {
-								background: url(../img/svg/browser.svg) 25px 45px no-repeat;
+								background: url(../img/svg/browser.svg) 25px 38px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(2) {
-								background: url(../img/svg/key.svg) 25px 35px no-repeat;
+								background: url(../img/svg/key.svg) 25px 30px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(3) {
-								background: url(../img/svg/writing.svg) 25px 35px no-repeat;
+								background: url(../img/svg/writing.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 						}
 					}
 					&:nth-of-type(2) {
 						> li {
-							padding: 3em 6em;
 							list-style-type: none;
 							&:nth-child(1) {
-								background: url(../img/svg/usb.svg) 25px 35px no-repeat;
+								background: url(../img/svg/usb.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(2) {
-								background: url(../img/svg/otpdevice.svg) 25px 35px no-repeat;
+								background: url(../img/svg/otpdevice.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(3) {
-								background: url(../img/svg/otpdevice.svg) 25px 35px no-repeat;
+								background: url(../img/svg/otpdevice.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 						}
@@ -665,36 +667,34 @@ body {
 				> ul {
 					&:nth-of-type(1) {
 						> li {
-							padding: 3em 6em;
 							list-style-type: none;
 							&:nth-child(1) {
-								background: url(../img/svg/bills.svg) 25px 35px no-repeat;
+								background: url(../img/svg/bills.svg) 25px 30px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(2) {
-								background: url(../img/svg/writing.svg) 25px 40px no-repeat;
+								background: url(../img/svg/writing.svg) 25px 35px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(3) {
-								background: url(../img/svg/list.svg) 25px 45px no-repeat;
+								background: url(../img/svg/list.svg) 25px 35px no-repeat;
 								background-size: auto 35px;
 							}
 						}
 					}
 					&:nth-of-type(2) {
 						> li {
-							padding: 3em 6em;
 							list-style-type: none;
 							&:nth-child(1) {
 								background: url(../img/svg/cardinfo.svg) 25px 35px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(2) {
-								background: url(../img/svg/time.svg) 25px 35px no-repeat;
+								background: url(../img/svg/time.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 							&:nth-child(3) {
-								background: url(../img/svg/moneyout.svg) 25px 35px no-repeat;
+								background: url(../img/svg/moneyout.svg) 25px 25px no-repeat;
 								background-size: auto 35px;
 							}
 						}
@@ -751,6 +751,15 @@ body {
 						color: #fff;
 						text-align: center;
 					}
+					> div {
+						color: red;
+						> iframe {
+							width: 100%;
+						}
+					}
+				}
+				> .company_copyright {
+					padding: 20px 0;
 				}
 			}
 		}

@@ -1,6 +1,6 @@
-$(document).ready(function () {
 
-	//var localizations;  //
+
+$(document).ready(function () {
 	var lang = 'ru';
 
 	function variables(local) {
@@ -8,6 +8,7 @@ $(document).ready(function () {
 		$.get({
 			url: 'build/json/localizations.json',
 			success: function(data) {
+
 				var miscMainTitle       = data[lang].misc.mainTitle;
 				var miscCompanyName     = data[lang].misc.companyName;
 				var miscMainTitleText0  = data[lang].misc.mainMenu[0].text;
@@ -26,7 +27,6 @@ $(document).ready(function () {
 				var miscMainTitleSlide6 = data[lang].misc.mainMenu[6].slide;
 				var miscWelcomeMessage  = data[lang].misc.welcomeMessage;
 				var miscLearnMore       = data[lang].misc.learnMore;
-
 
 				//var slidesAdvantagesSlideHeader         = {idLang: "qqq", text: tedata[lang].slides.advantages.slideHeader};
 				var slidesAdvantagesSlideHeader         = data[lang].slides.advantages.slideHeader;
@@ -86,7 +86,6 @@ $(document).ready(function () {
 				var slidesAdvantagesCorporatecustomersSlideListsListText4    = data[lang].slides.corporatecustomers.slideLists[0].list[4].text;
 				//конец 4 слайда
 
-
 				//начало 5 слайда
 				var slidesAdvantagesPrivatecustomersSvgTemplate              = data[lang].slides.privatecustomers.svgTemplate;
 				var slidesAdvantagesPrivatecustomersSlideHeader              = data[lang].slides.privatecustomers.slideHeader;
@@ -103,7 +102,6 @@ $(document).ready(function () {
 				var slidesAdvantagesPrivatecustomersSlideListsListIcon4      = data[lang].slides.privatecustomers.slideLists[0].list[4].icon;
 				var slidesAdvantagesPrivatecustomersSlideListsListText4      = data[lang].slides.privatecustomers.slideLists[0].list[4].text;
 				//конец 5 слайда
-
 
 				//начало 6 слайда
 				var slidesAdvantagesSecuritySvgTemplate            = data[lang].slides.security.svgTemplate;
@@ -179,7 +177,7 @@ $(document).ready(function () {
 				//первый слайд
 				$('#mainTitle').text(miscMainTitle);
 				$('#welcomeMessage').text(miscWelcomeMessage);
-				$('#showMore').text(miscLearnMore);
+				$('#showMore').html(miscLearnMore+"<i class=\"arrow_down\"></i>");
 				//конец 1 слайда
 
 				//второй слайд
@@ -331,6 +329,9 @@ $(document).ready(function () {
 		}
 	})
 
+
+
+
 	//Плавное появление IFOBS, ДОБРО ПОЖАЛОВАТЬ В ИНТЕРНЕТ-БАНКИНГ
 	$( ".upper_container" ).animate({
 	    top: "100px",
@@ -354,8 +355,10 @@ $(document).ready(function () {
 
 
 
-	//плавно выезжаем на втором слайде
+$('body,html').animate({scrollTop: 0}, 1000, function(){
+});
 
+	//плавно выезжаем на втором слайде
 	function secondAnimation () {
 		$( ".m_content_1" ).animate({
 		    top: "0px",
@@ -383,7 +386,6 @@ $(document).ready(function () {
 		});
 	}
 
-
 	//что делаем если екран меньше чем 768 px
 	function low_size() {
 		$('header').addClass( "header_low" );
@@ -404,10 +406,10 @@ $(document).ready(function () {
 		$('.simple_logo').removeClass( "simple_logo_low" );
 	}
 
+
 if( $(window).width()<=768) {
   	low_size();
 }
-
 $( window ).resize(function() {
   
   if( $(window).width()<=768) {
@@ -416,23 +418,96 @@ $( window ).resize(function() {
   else {
   	high_size();
   }
-
 });
 
 
-//отслеживаем скролл
 
+var listener;
+var counter = 0;
 
+$('#showMore, #advantages').click(function () {
+	counter = 1;
+	secondAnimation ();
+})
+$('#for_banks').click(function () {
+	counter = 2;
+})
+$('#corp_clients').click(function () {
+	counter = 3;
+})
+$('#private_clients').click(function () {
+	counter = 4;
+})
+$('#sequrity').click(function () {
+	counter = 5;
+})
+$('#ifobs_mobile').click(function () {
+	counter = 6;
+})
+$('#contacts').click(function () {
+	counter = 7;
+})
 
+//плавный скролл по сайту
+window.onmousewheel = function(e) {
+var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
 
-window.onscroll = function() {
-	var top = $(".m_content_1").offset().top - $(window).scrollTop();
-	if(top<=500) {
-		secondAnimation ()
+	if(listener) {
+		return;
 	}
+	listener = true;
+    var delta = e.deltaY || e.detail || e.wheelDelta;
+    if(delta<0) {
+    	if(counter>=1) {
+    		counter--;
+    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
+    			listener = false;
+    		});
+    	}
+    	else {
+    		listener = false;
+    	}
+    }
+    if(delta>0) {
+    	if(counter<=6) {
+    		counter++;
+    		if(counter==1) {
+    			secondAnimation ();
+    		}
+    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
+    			listener = false;
+    		});
+    	}
+    	else {
+    		listener = false;
+    	}
+    }
+    e.preventDefault();
+    e.stopPropagation();
 }
 
 
+//плавный переход по якорям
+$("#menu").on("click","a", function (event) {
+	//отменяем стандартную обработку нажатия по ссылке
+	event.preventDefault();
+	//забираем идентификатор бока с атрибута href
+	var id  = $(this).attr('href'),
+	//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
+	//анимируем переход на расстояние - top за 1500 мс
+	$('body,html').animate({scrollTop: top}, 1000);
+});
+$("a").on("click", function (event) {
+	event.preventDefault();
+	var id  = $(this).attr('href'),
+	top = $(id).offset().top;
+	$('body,html').animate({scrollTop: top}, 1000);
+});
+
+
+
+ 
 
 });
 

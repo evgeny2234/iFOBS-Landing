@@ -173,5 +173,10 @@ var gulp = require('gulp'),
 	*/
 
 
+	gulp.task('webserver', function () {
+    	browserSync(config);
+	});
+
+
 	gulp.task('default', ['build', 'webserver', 'watch']);
 
