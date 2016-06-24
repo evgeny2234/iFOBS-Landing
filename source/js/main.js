@@ -3,7 +3,7 @@
 $(document).ready(function () {
 	var lang = 'ru';
 
-	function variables(local) {
+	function variables(local, callback) {
 
 		$.get({
 			url: 'build/json/localizations.json',
@@ -163,6 +163,7 @@ $(document).ready(function () {
 				//конец 7 слайда
 
 
+
 				function local() {
 
 				//хедер
@@ -286,6 +287,10 @@ $(document).ready(function () {
 
 				}
 				local();
+
+				if(callback) {
+					callback();
+				}
 			}
 		})
 	}
@@ -293,19 +298,22 @@ $(document).ready(function () {
 	//клацаем по языкам и переводим сайт
 	variables(lang);
 	$('.local_ru').click(function() {
-		// body...
 		lang = 'ru';
-		variables(lang);
+		variables(lang, function() {
+			$('.arrow_down').addClass("opacity_style_full");	
+		});
 	})
 	$('.local_ua').click(function() {
-		// body...
 		lang = 'ua';
-		variables(lang);
+		variables(lang, function() {
+			$('.arrow_down').addClass("opacity_style_full");	
+		});
 	})
 	$('.local_en').click(function() {
-		// body...
 		lang = 'en';
-		variables(lang);
+		variables(lang, function() {
+			$('.arrow_down').addClass("opacity_style_full");	
+		});
 	})
 
 	//Опускаем/поднимаем менюшку
@@ -330,8 +338,6 @@ $(document).ready(function () {
 	})
 
 
-
-
 	//Плавное появление IFOBS, ДОБРО ПОЖАЛОВАТЬ В ИНТЕРНЕТ-БАНКИНГ
 	$( ".upper_container" ).animate({
 	    top: "100px",
@@ -339,17 +345,14 @@ $(document).ready(function () {
 	  }, 3000, function() {
 	  	$( "#welcomeMessage" ).animate({
 	  		opacity: 1
-	  	}, 3000, function() {
+	  	}, 3000, function f1() {
 	  		$('#showMore').css({
 	  			"display": "block",
 	  			"opacity":"1",
 	  			"cursor": "pointer"
 	  		});
-	  		$('.arrow_down').css({
-	  			"display": "block",
-	  			"opacity":"1",
-	  			"cursor": "pointer"
-	  		});
+	  		//$('#showMore').addClass("showMore_full");
+	  		$('.arrow_down').addClass("opacity_style_full");
 	  	});
 	});
 
