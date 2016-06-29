@@ -488,6 +488,7 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     if(delta>0) {
     	if(counter<=6) {
     		counter++;
+    		$(".s_button").addClass('s_button_opacity');
     		slider_buttons(counter);
     		if(counter==1) {
     			secondAnimation ();
