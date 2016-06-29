@@ -414,7 +414,6 @@ if( $(window).width()<=768) {
   	low_size();
 }
 $( window ).resize(function() {
-  
   if( $(window).width()<=768) {
   	low_size();
   }
@@ -423,33 +422,45 @@ $( window ).resize(function() {
   }
 });
 
-
-
 var listener;
 var counter = 0;
 
-$('#showMore, #advantages').click(function () {
+$('#showMore, #advantages, .sb_1').click(function () {
 	counter = 1;
 	secondAnimation ();
+	slider_buttons(counter);
 })
-$('#for_banks').click(function () {
+$('#for_banks, .sb_2').click(function () {
 	counter = 2;
+	slider_buttons(counter);
 })
-$('#corp_clients').click(function () {
+$('#corp_clients, .sb_3').click(function () {
 	counter = 3;
+	slider_buttons(counter);
 })
-$('#private_clients').click(function () {
+$('#private_clients, .sb_4').click(function () {
 	counter = 4;
+	slider_buttons(counter);
 })
-$('#sequrity').click(function () {
+$('#sequrity, .sb_5').click(function () {
 	counter = 5;
+	slider_buttons(counter);
 })
-$('#ifobs_mobile').click(function () {
+$('#ifobs_mobile, .sb_6').click(function () {
 	counter = 6;
+	slider_buttons(counter);
 })
-$('#contacts').click(function () {
+$('#contacts, .sb_7').click(function () {
 	counter = 7;
+	slider_buttons(counter);
 })
+
+function slider_buttons(counter) {
+	$(".s_button").removeClass('s_button_active');
+	$(".sb_"+counter).addClass('s_button_active');
+	$('.nav-click').removeClass('nav_click_active');
+ 	$('.nav_l_'+counter).addClass('nav_click_active');
+}
 
 //плавный скролл по сайту
 window.onmousewheel = function(e) {
@@ -462,18 +473,22 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     var delta = e.deltaY || e.detail || e.wheelDelta;
     if(delta<0) {
     	if(counter>=1) {
-    		counter--;
-    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
-    			listener = false;
-    		});
-    	}
-    	else {
-    		listener = false;
-    	}
+    		if(counter>1) {
+    			counter--;
+    			slider_buttons(counter);
+	    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
+	    			listener = false;
+	    		});
+	    	}
+	    	else {
+	    		listener = false;
+	    	}
+	    }
     }
     if(delta>0) {
     	if(counter<=6) {
     		counter++;
+    		slider_buttons(counter);
     		if(counter==1) {
     			secondAnimation ();
     		}
@@ -489,9 +504,10 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     e.stopPropagation();
 }
 
-
 //плавный переход по якорям
 $("#menu").on("click","a", function (event) {
+	$('.nav-click').removeClass('nav_click_active');
+	$(this).addClass('nav_click_active');
 	//отменяем стандартную обработку нажатия по ссылке
 	event.preventDefault();
 	//забираем идентификатор бока с атрибута href
@@ -510,7 +526,6 @@ $("a").on("click", function (event) {
 
 
 
- 
 
 });
 

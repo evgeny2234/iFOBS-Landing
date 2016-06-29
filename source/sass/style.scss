@@ -46,7 +46,14 @@ html {
 	overflow:  hidden;
 }
 
+.s_button_active {
+	background-color: rgba(255,255,255,1) !important;
+}
 
+.nav_click_active {
+	opacity: 1 !important;
+	color: white !important;
+}
 
 
 body {
