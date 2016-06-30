@@ -60,6 +60,35 @@ html {
 	opacity: 0.4;
 	transition: 0.5s;
 }
+.cont_fixed {
+    position: fixed !important;
+    top: 0px !important;
+}
+
+.z-inverse_1 {
+	z-index: 1000 !important;
+}
+.z-inverse_2 {
+	z-index: 999 !important;
+}
+.z-inverse_3 {
+	z-index: 998 !important;
+}
+.z-inverse_4 {
+	z-index: 997 !important;
+}
+.z-inverse_5 {
+	z-index: 996 !important;
+}
+.z-inverse_6 {
+	z-index: 995 !important;
+}
+.z-inverse_7 {
+	z-index: 994 !important;
+}
+.z-inverse_8 {
+	z-index: 993 !important;
+}
 
 
 body {
@@ -71,7 +100,7 @@ body {
 		width: 5vw;
 		display: block;
 		background: transparent url(../img/background/menu.png) no-repeat; 
-		z-index: 1000;
+		z-index: 1002;
 		cursor: pointer;
 		top: 5px;
 		left: 30px;
@@ -88,6 +117,10 @@ body {
 	}
 
 	header {
+		position: fixed;
+		top: -60px;
+		z-index: 1001;
+		width: 100%;
 		> .slider_buttons {
 			position: absolute;
 			top: 45vh;
@@ -108,10 +141,6 @@ body {
 				}
 			}
 		}
-		position: fixed;
-		top: -60px;
-		z-index: 100;
-		width: 100%;
 		> nav {
 			//height: 86px;
 			border-radius: 0px !important; 

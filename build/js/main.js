@@ -472,6 +472,25 @@ function slider_buttons(counter) {
  	$(".s_button").addClass('s_button_opacity');
 }
 
+//меняем Z-index чтоб при прокрутке вверх был эффект наезжания и темные блоки стопались в топе, а след страница на них наежала
+function z_inverse_add() {
+	var i = 1;
+	for(i=1; i<=8;i++) 
+	{
+		$('.slide'+i).addClass('z-inverse_'+i);
+	}
+}
+//когда снова крутим вниз, ставим Все на Свои места
+function z_inverse_remove() {
+	var i = 1;
+	for(i=1; i<=8;i++) 
+	{
+		$('.slide'+i).removeClass('z-inverse_'+i);
+	}
+	$('.cont').removeClass('cont_fixed');
+}
+
+
 //плавный скролл по сайту колесиком
 window.onmousewheel = function(e) {
 var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
@@ -484,7 +503,11 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     if(delta<0) {
     	if(counter>=1) {
     		if(counter>1) {
+    			z_inverse_add();
+    			$('.contain_'+counter).removeClass('cont_fixed');
     			counter--;
+    			$('.contain_'+(counter+2)).addClass('cont_fixed');
+    			console.log(counter);
     			slider_buttons(counter);
 	    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
 	    			listener = false;
@@ -497,7 +520,10 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     }
     if(delta>0) {
     	if(counter<=6) {
+ 			z_inverse_remove()
     		counter++;
+    		console.log(counter);
+    		$('.contain_'+counter).addClass('cont_fixed');
     		$(".s_button").addClass('s_button_opacity');
     		slider_buttons(counter);
     		if(counter==1) {
