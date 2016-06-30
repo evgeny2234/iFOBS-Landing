@@ -487,7 +487,7 @@ function z_inverse_remove() {
 	{
 		$('.slide'+i).removeClass('z-inverse_'+i);
 	}
-	$('.cont').removeClass('cont_fixed');
+	$('.cont, .contain_1, .contain_2').removeClass('cont_fixed');
 }
 
 

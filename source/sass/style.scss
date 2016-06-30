@@ -351,6 +351,7 @@ body {
 			}
 		}
 		> .slide2 {
+		overflow: hidden;
 		background: url(../img/background/dummyBg2.jpg) 50% 50%/cover no-repeat fixed;
 			> h3 {
 				position: absolute;
