@@ -460,6 +460,7 @@ function slider_buttons(counter) {
 	$(".sb_"+counter).addClass('s_button_active');
 	$('.nav-click').removeClass('nav_click_active');
  	$('.nav_l_'+counter).addClass('nav_click_active');
+ 	$(".s_button").addClass('s_button_opacity');
 }
 
 //плавный скролл по сайту
