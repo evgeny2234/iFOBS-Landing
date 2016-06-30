@@ -1,6 +1,12 @@
-
-
 $(document).ready(function () {
+
+//открываем сайт всегда с первого слайда
+$(window).on( 'load', function() {
+	$('body,html').animate({
+	scrollTop: 0
+	}, 1);
+});
+
 	var lang = 'ru';
 
 	function variables(local, callback) {
@@ -295,21 +301,29 @@ $(document).ready(function () {
 		})
 	}
 
-	//клацаем по языкам и переводим сайт
+	//локализация
+	local_active('.local_ru')
+	function local_active(subj) {
+		$(".localiz_").removeClass('localizations_active');
+		$(subj).addClass('localizations_active');
+	}
 	variables(lang);
 	$('.local_ru').click(function() {
+		local_active(this);
 		lang = 'ru';
 		variables(lang, function() {
 			$('.arrow_down').addClass("opacity_style_full");	
 		});
 	})
 	$('.local_ua').click(function() {
+		local_active(this);
 		lang = 'ua';
 		variables(lang, function() {
 			$('.arrow_down').addClass("opacity_style_full");	
 		});
 	})
 	$('.local_en').click(function() {
+		local_active(this);
 		lang = 'en';
 		variables(lang, function() {
 			$('.arrow_down').addClass("opacity_style_full");	
@@ -355,11 +369,6 @@ $(document).ready(function () {
 	  		$('.arrow_down').addClass("opacity_style_full");
 	  	});
 	});
-
-
-
-$('body,html').animate({scrollTop: 0}, 1000, function(){
-});
 
 	//плавно выезжаем на втором слайде
 	function secondAnimation () {
@@ -463,7 +472,7 @@ function slider_buttons(counter) {
  	$(".s_button").addClass('s_button_opacity');
 }
 
-//плавный скролл по сайту
+//плавный скролл по сайту колесиком
 window.onmousewheel = function(e) {
 var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
 
