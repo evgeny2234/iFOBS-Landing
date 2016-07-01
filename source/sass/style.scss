@@ -90,6 +90,15 @@ html {
 	z-index: 993 !important;
 }
 
+.backpos_up {
+	background-position-y: -25vh !important;
+	transition: 1.5s;
+}
+.backpos_down {
+	background-position-y: 0vh !important;
+	transition: 1.5s;
+}
+
 
 body {
 	font: 14px roboto,Arial,sans-serif;
@@ -251,7 +260,6 @@ body {
 			width: 100%;
 			z-index: 10;
 			margin: 0 auto;
-
 			position: relative;
 			-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 			box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -292,6 +300,7 @@ body {
 		}
 		> .slide1 {
 		background: url(../img/background/dummyBg1.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .upper_container {
 			width: 100%;
 			position: absolute;
@@ -353,6 +362,7 @@ body {
 		> .slide2 {
 		overflow: hidden;
 		background: url(../img/background/dummyBg2.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> h3 {
 				position: absolute;
 				text-transform: uppercase;
@@ -462,6 +472,7 @@ body {
 		}
 		> .slide3 {
 		background: url(../img/background/dummyBg3.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .left_image {
 				> img {
 					width: 140vh;
@@ -507,6 +518,7 @@ body {
 		}
 		> .slide4 {
 		background: url(../img/background/dummyBg4.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .left_image {
 				position: absolute;
 				right: 50%;
@@ -559,6 +571,7 @@ body {
 		}
 		> .slide5 {
 		background: url(../img/background/dummyBg5.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .left_image {
 			    position: absolute;
 				right: 50%;
@@ -608,6 +621,7 @@ body {
 		}
 		> .slide6 {
 		background: url(../img/background/dummyBg6.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .left_image {
 				position: absolute;
 				right: 70%;
@@ -694,6 +708,7 @@ body {
 		}
 		> .slide7 {
 		background: url(../img/background/dummyBg7.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .left_image {
 				position: absolute;
 				right: 60%;
@@ -780,6 +795,7 @@ body {
 		}
 		> .slide8 {
 		background: url(../img/background/dummyBg8.jpg) 50% 50%/cover no-repeat fixed;
+		background-position-y: 0px;
 			> .cont {
 				width: 650px !important;
 				left: 50%;

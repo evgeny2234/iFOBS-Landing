@@ -503,13 +503,14 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     if(delta<0) {
     	if(counter>=1) {
     		if(counter>1) {
+    			back_parallax_up(counter);  //эффект параллакса для фона при прокрутке вверх
     			z_inverse_add();
-    			$('.contain_'+counter).removeClass('cont_fixed');
+    			$('.contain_'+counter).removeClass('cont_fixed'); //эффект парраллакса для темных блоков
+				
     			counter--;
-    			$('.contain_'+(counter+2)).addClass('cont_fixed');
-    			console.log(counter);
+    			$('.contain_'+(counter+2)).addClass('cont_fixed');  //эффект парраллакса для темных блоков
     			slider_buttons(counter);
-	    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
+	    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
 	    			listener = false;
 	    		});
 	    	}
@@ -522,16 +523,16 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     	if(counter<=6) {
  			z_inverse_remove()
     		counter++;
-    		console.log(counter);
-    		$('.contain_'+counter).addClass('cont_fixed');
-    		$(".s_button").addClass('s_button_opacity');
+    		$('.contain_'+counter).addClass('cont_fixed'); //эффект парраллакса для темных блоков
+    		$(".s_button").addClass('s_button_opacity');  //плавеное появление кнопок слайдера
     		slider_buttons(counter);
     		if(counter==1) {
     			secondAnimation ();
     		}
-    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){
+    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
     			listener = false;
     		});
+    		back_parallax_down(counter); //эффект параллакса для фона при прокрутке вниз
     	}
     	else {
     		listener = false;
@@ -539,6 +540,19 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     }
     e.preventDefault();
     e.stopPropagation();
+}
+
+function back_parallax_up(counter) {
+	$('.slide'+counter).animate({
+		backgroundPositionY: '0vh'
+	}, 1900, function(){
+	});
+}
+function back_parallax_down(counter) {
+	$('.slide'+counter).animate({
+		backgroundPositionY: '-25vh'
+	}, 1900, function(){
+	});
 }
 
 //плавный переход по якорям
@@ -552,13 +566,13 @@ $("#menu").on("click","a", function (event) {
 	//узнаем высоту от начала страницы до блока на который ссылается якорь
 		top = $(id).offset().top;
 	//анимируем переход на расстояние - top за 1500 мс
-	$('body,html').animate({scrollTop: top}, 1000);
+	$('body,html').animate({scrollTop: top}, 2000);
 });
 $("a").on("click", function (event) {
 	event.preventDefault();
 	var id  = $(this).attr('href'),
 	top = $(id).offset().top;
-	$('body,html').animate({scrollTop: top}, 1000);
+	$('body,html').animate({scrollTop: top}, 2000);
 });
 
 
