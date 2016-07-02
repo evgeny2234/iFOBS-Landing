@@ -34,7 +34,6 @@ $(window).on( 'load', function() {
 				var miscWelcomeMessage  = data[lang].misc.welcomeMessage;
 				var miscLearnMore       = data[lang].misc.learnMore;
 
-				//var slidesAdvantagesSlideHeader         = {idLang: "qqq", text: tedata[lang].slides.advantages.slideHeader};
 				var slidesAdvantagesSlideHeader         = data[lang].slides.advantages.slideHeader;
 
 				var slidesAdvantagesSlideLists0Priority = data[lang].slides.advantages.slideLists[0].priority;
@@ -438,38 +437,60 @@ $('#showMore, #advantages, .sb_1').click(function () {
 	counter = 1;
 	secondAnimation ();
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#for_banks, .sb_2').click(function () {
 	counter = 2;
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#corp_clients, .sb_3').click(function () {
 	counter = 3;
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#private_clients, .sb_4').click(function () {
 	counter = 4;
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#sequrity, .sb_5').click(function () {
 	counter = 5;
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#ifobs_mobile, .sb_6').click(function () {
 	counter = 6;
 	slider_buttons(counter);
+	click_remove_classes()
 })
 $('#contacts, .sb_7').click(function () {
 	counter = 7;
 	slider_buttons(counter);
+	click_remove_classes()
 })
+
+$('.nav-click, .s_button').click(function(){
+	for(var i=1;i<9;i++) {
+		$('.slide'+i).removeClass('z-inverse_'+i);
+	}
+})
+
+function click_remove_classes() {
+	$('.cont').removeClass('cont_fixed');
+	$('.contain_2').removeClass('cont_fixed');
+	$('.slide').css({"backgroundPositionY": "0vh"});
+	for(var i=1;i<9;i++) {
+		$('.slide').removeClass('z-inverse_'+i);
+	}
+}
 
 function slider_buttons(counter) {
 	$(".s_button").removeClass('s_button_active');
 	$(".sb_"+counter).addClass('s_button_active');
 	$('.nav-click').removeClass('nav_click_active');
  	$('.nav_l_'+counter).addClass('nav_click_active');
- 	$(".s_button").addClass('s_button_opacity');
+ 	$(".s_button").addClass('s_button_opacity');	
 }
 
 //меняем Z-index чтоб при прокрутке вверх был эффект наезжания и темные блоки стопались в топе, а след страница на них наежала
@@ -493,6 +514,7 @@ function z_inverse_remove() {
 
 //плавный скролл по сайту колесиком
 window.onmousewheel = function(e) {
+
 var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
 
 	if(listener) {
@@ -501,12 +523,10 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
 	listener = true;
     var delta = e.deltaY || e.detail || e.wheelDelta;
     if(delta<0) {
-    	if(counter>=1) {
     		if(counter>1) {
     			back_parallax_up(counter);  //эффект параллакса для фона при прокрутке вверх
     			z_inverse_add();
     			$('.contain_'+counter).removeClass('cont_fixed'); //эффект парраллакса для темных блоков
-				
     			counter--;
     			$('.contain_'+(counter+2)).addClass('cont_fixed');  //эффект парраллакса для темных блоков
     			slider_buttons(counter);
@@ -517,7 +537,6 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
 	    	else {
 	    		listener = false;
 	    	}
-	    }
     }
     if(delta>0) {
     	if(counter<=6) {
@@ -542,10 +561,16 @@ var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset
     e.stopPropagation();
 }
 
+
+
 function back_parallax_up(counter) {
+	$('.slide'+counter).css({
+		"backgroundPositionY": "-2vh"
+	});
 	$('.slide'+counter).animate({
 		backgroundPositionY: '0vh'
 	}, 1900, function(){
+		
 	});
 }
 function back_parallax_down(counter) {
