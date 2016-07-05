@@ -131,6 +131,13 @@ function local_active(subj) {
 	$(subj).addClass('localizations_active');
 }
 	
+$('.m_content__').click(function(){
+	var num_list = $(this).data('ulnumber');
+	console.log(num_list);
+	$(".appear_menu__").removeClass('appear_menu');
+	$(".app_menu_"+num_list).addClass('appear_menu');
+})
+
 //Опускаем/поднимаем менюшку
 var check = false;
 $('.menu_up_down').click(function(){
@@ -143,6 +150,20 @@ $('.menu_up_down').click(function(){
 	if(!check) {
 		$('header').removeClass('menu_click_UP');
 		$('header').addClass('menu_click_DOWN');
+		check = true;
+		return;
+	}
+})
+
+var check2 = false;
+$('#navBARbuttonMenu').click(function(){
+	if(check) {
+		$('header').removeClass("header_ACTIVE");
+		check = false;
+		return;
+	}
+	if(!check) {
+		$('header').addClass("header_ACTIVE");
 		check = true;
 		return;
 	}
@@ -359,6 +380,7 @@ $("a").on("click", function (event) {
 	top = $(id).offset().top;
 	$('body').animate({scrollTop: top}, 2000);
 });
+
 
 
 
