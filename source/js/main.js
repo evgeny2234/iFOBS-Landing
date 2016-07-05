@@ -11,113 +11,115 @@ $.get({
 url: 'build/json/localizations.json',
 success: function(dataLang) {
 	data = dataLang;
-		variables(lang, SelectorData, data);
+		variables(lang, data);
 	}
 });
 
 var lang = "ru";  //изначально ставим русский
 
+
+
+function variables(lang, data) {
+
 var SelectorData = [
-["#mainTitle","data[lang].misc.mainTitle"],
-["#advantages","data[lang].misc.companyName"],
-["#advantages","data[lang].misc.mainMenu[0].text"],
-["#for_banks","data[lang].misc.mainMenu[1].text"],
-["#corp_clients","data[lang].misc.mainMenu[2].text"],
-["#private_clients","data[lang].misc.mainMenu[3].text"],
-["#sequrity","data[lang].misc.mainMenu[4].text"],
-["#ifobs_mobile","data[lang].misc.mainMenu[5].text"],
-["#contacts","data[lang].misc.mainMenu[6].text"],
-["#welcomeMessage","data[lang].misc.welcomeMessage"],
-["#showMore","data[lang].misc.learnMore"],
+["#mainTitle", data[lang].misc.mainTitle],
+["#advantages", data[lang].misc.companyName],
+["#advantages", data[lang].misc.mainMenu[0].text],
+["#for_banks", data[lang].misc.mainMenu[1].text],
+["#corp_clients", data[lang].misc.mainMenu[2].text],
+["#private_clients", data[lang].misc.mainMenu[3].text],
+["#sequrity", data[lang].misc.mainMenu[4].text],
+["#ifobs_mobile", data[lang].misc.mainMenu[5].text],
+["#contacts", data[lang].misc.mainMenu[6].text],
+["#welcomeMessage", data[lang].misc.welcomeMessage],
+["#showMore", data[lang].misc.learnMore],
 
-["#five_reasons","data[lang].slides.advantages.slideHeader"],
-["#s_slider_title_1","data[lang].slides.advantages.slideLists[0].title"],
-["#s_slider_title_2","data[lang].slides.advantages.slideLists[1].title"],
-["#s_slider_title_3","data[lang].slides.advantages.slideLists[2].title"],
-["#s_slider_title_4","data[lang].slides.advantages.slideLists[3].title"],
-["#s_slider_title_5","data[lang].slides.advantages.slideLists[4].title"],
-["#title_1_1","data[lang].slides.advantages.slideLists[0].list[0]"],
-["#title_1_2","data[lang].slides.advantages.slideLists[0].list[1]"],
-["#title_1_3","data[lang].slides.advantages.slideLists[0].list[2]"],
-["#title_2_1","data[lang].slides.advantages.slideLists[1].list[0]"],
-["#title_2_2","data[lang].slides.advantages.slideLists[1].list[1]"],
-["#title_2_3","data[lang].slides.advantages.slideLists[1].list[2]"],
-["#title_2_4","data[lang].slides.advantages.slideLists[1].list[3]"],
-["#title_2_5","data[lang].slides.advantages.slideLists[1].list[4]"],
-["#title_3_1","data[lang].slides.advantages.slideLists[2].list[0]"],
-["#title_3_2","data[lang].slides.advantages.slideLists[2].list[1]"],
-["#title_3_3","data[lang].slides.advantages.slideLists[2].list[2]"],
-["#title_4_1","data[lang].slides.advantages.slideLists[3].list[0]"],
-["#title_4_2","data[lang].slides.advantages.slideLists[3].list[1]"],
-["#title_4_3","data[lang].slides.advantages.slideLists[3].list[2]"],
-["#title_4_4","data[lang].slides.advantages.slideLists[3].list[3]"],
-["#title_5_1","data[lang].slides.advantages.slideLists[4].list[0]"],
-["#title_5_2","data[lang].slides.advantages.slideLists[4].list[1]"],
-["#title_5_3","data[lang].slides.advantages.slideLists[4].list[2]"],
+["#five_reasons", data[lang].slides.advantages.slideHeader],
+["#s_slider_title_1", data[lang].slides.advantages.slideLists[0].title],
+["#s_slider_title_2", data[lang].slides.advantages.slideLists[1].title],
+["#s_slider_title_3", data[lang].slides.advantages.slideLists[2].title],
+["#s_slider_title_4", data[lang].slides.advantages.slideLists[3].title],
+["#s_slider_title_5", data[lang].slides.advantages.slideLists[4].title],
+["#title_1_1", data[lang].slides.advantages.slideLists[0].list[0]],
+["#title_1_2", data[lang].slides.advantages.slideLists[0].list[1]],
+["#title_1_3", data[lang].slides.advantages.slideLists[0].list[2]],
+["#title_2_1", data[lang].slides.advantages.slideLists[1].list[0]],
+["#title_2_2", data[lang].slides.advantages.slideLists[1].list[1]],
+["#title_2_3", data[lang].slides.advantages.slideLists[1].list[2]],
+["#title_2_4", data[lang].slides.advantages.slideLists[1].list[3]],
+["#title_2_5", data[lang].slides.advantages.slideLists[1].list[4]],
+["#title_3_1", data[lang].slides.advantages.slideLists[2].list[0]],
+["#title_3_2", data[lang].slides.advantages.slideLists[2].list[1]],
+["#title_3_3", data[lang].slides.advantages.slideLists[2].list[2]],
+["#title_4_1", data[lang].slides.advantages.slideLists[3].list[0]],
+["#title_4_2", data[lang].slides.advantages.slideLists[3].list[1]],
+["#title_4_3", data[lang].slides.advantages.slideLists[3].list[2]],
+["#title_4_4", data[lang].slides.advantages.slideLists[3].list[3]],
+["#title_5_1", data[lang].slides.advantages.slideLists[4].list[0]],
+["#title_5_2", data[lang].slides.advantages.slideLists[4].list[1]],
+["#title_5_3", data[lang].slides.advantages.slideLists[4].list[2]],
 
-["#slide_3_title","data[lang].slides.bankservices.slideHeader"],
-["#slide_3_num_1","data[lang].slides.bankservices.slideLists[0].list[0].text"],
-["#slide_3_num_2","data[lang].slides.bankservices.slideLists[0].list[1].text"],
-["#slide_3_num_3","data[lang].slides.bankservices.slideLists[0].list[2].text"],
-["#slide_3_num_4","data[lang].slides.bankservices.slideLists[0].list[3].text"],
-["#slide_3_num_5","data[lang].slides.bankservices.slideLists[0].list[4].text"],
+["#slide_3_title", data[lang].slides.bankservices.slideHeader],
+["#slide_3_num_1", data[lang].slides.bankservices.slideLists[0].list[0].text],
+["#slide_3_num_2", data[lang].slides.bankservices.slideLists[0].list[1].text],
+["#slide_3_num_3", data[lang].slides.bankservices.slideLists[0].list[2].text],
+["#slide_3_num_4", data[lang].slides.bankservices.slideLists[0].list[3].text],
+["#slide_3_num_5", data[lang].slides.bankservices.slideLists[0].list[4].text],
 
-["#slide_4_title","data[lang].slides.corporatecustomers.slideHeader"],
-["#slide_4_num_1","data[lang].slides.corporatecustomers.slideLists[0].list[0].text"],
-["#slide_4_num_2","data[lang].slides.corporatecustomers.slideLists[0].list[1].text"],
-["#slide_4_num_3","data[lang].slides.corporatecustomers.slideLists[0].list[2].text"],
-["#slide_4_num_4","data[lang].slides.corporatecustomers.slideLists[0].list[3].text"],
-["#slide_4_num_5","data[lang].slides.corporatecustomers.slideLists[0].list[4].text"],
+["#slide_4_title", data[lang].slides.corporatecustomers.slideHeader],
+["#slide_4_num_1", data[lang].slides.corporatecustomers.slideLists[0].list[0].text],
+["#slide_4_num_2", data[lang].slides.corporatecustomers.slideLists[0].list[1].text],
+["#slide_4_num_3", data[lang].slides.corporatecustomers.slideLists[0].list[2].text],
+["#slide_4_num_4", data[lang].slides.corporatecustomers.slideLists[0].list[3].text],
+["#slide_4_num_5", data[lang].slides.corporatecustomers.slideLists[0].list[4].text],
 
-["#slide_5_title","data[lang].slides.privatecustomers.slideHeader"],
-["#slide_5_num_1","data[lang].slides.privatecustomers.slideLists[0].list[0].text"],
-["#slide_5_num_2","data[lang].slides.privatecustomers.slideLists[0].list[1].text"],
-["#slide_5_num_3","data[lang].slides.privatecustomers.slideLists[0].list[2].text"],
-["#slide_5_num_4","data[lang].slides.privatecustomers.slideLists[0].list[3].text"],
-["#slide_5_num_5","data[lang].slides.privatecustomers.slideLists[0].list[4].text"],
+["#slide_5_title", data[lang].slides.privatecustomers.slideHeader],
+["#slide_5_num_1", data[lang].slides.privatecustomers.slideLists[0].list[0].text],
+["#slide_5_num_2", data[lang].slides.privatecustomers.slideLists[0].list[1].text],
+["#slide_5_num_3", data[lang].slides.privatecustomers.slideLists[0].list[2].text],
+["#slide_5_num_4", data[lang].slides.privatecustomers.slideLists[0].list[3].text],
+["#slide_5_num_5", data[lang].slides.privatecustomers.slideLists[0].list[4].text],
 
-["#slide_6_title","data[lang].slides.security.slideHeader"],
-["#slide_6_un_title_1","data[lang].slides.security.slideLists[0].title"],
-["#slide_6_num_1","data[lang].slides.security.slideLists[0].list[0].text"],
-["#slide_6_num_2","data[lang].slides.security.slideLists[0].list[1].text"],
-["#slide_6_num_3","data[lang].slides.security.slideLists[0].list[2].text"],
-["#slide_6_un_title_2","data[lang].slides.security.slideLists[1].title"],
-["#slide_6_num_4","data[lang].slides.security.slideLists[1].list[0].text"],
-["#slide_6_num_5","data[lang].slides.security.slideLists[1].list[1].text"],
-["#slide_6_num_6","data[lang].slides.security.slideLists[1].list[2].text"],
+["#slide_6_title", data[lang].slides.security.slideHeader],
+["#slide_6_un_title_1", data[lang].slides.security.slideLists[0].title],
+["#slide_6_num_1", data[lang].slides.security.slideLists[0].list[0].text],
+["#slide_6_num_2", data[lang].slides.security.slideLists[0].list[1].text],
+["#slide_6_num_3", data[lang].slides.security.slideLists[0].list[2].text],
+["#slide_6_un_title_2", data[lang].slides.security.slideLists[1].title],
+["#slide_6_num_4", data[lang].slides.security.slideLists[1].list[0].text],
+["#slide_6_num_5", data[lang].slides.security.slideLists[1].list[1].text],
+["#slide_6_num_6", data[lang].slides.security.slideLists[1].list[2].text],
 
-["#slide_7_title","data[lang].slides.ifobsmobile.slideHeader"],
-["#slide_7_un_title_1","data[lang].slides.ifobsmobile.slideLists[0].title"],
-["#slide_7_num_1","data[lang].slides.ifobsmobile.slideLists[0].list[0].text"],
-["#slide_7_num_2","data[lang].slides.ifobsmobile.slideLists[0].list[1].text"],
-["#slide_7_num_3","data[lang].slides.ifobsmobile.slideLists[0].list[2].text"],
-["#slide_7_un_title_2","data[lang].slides.ifobsmobile.slideLists[1].title"],
-["#slide_7_num_4","data[lang].slides.ifobsmobile.slideLists[1].list[0].text"],
-["#slide_7_num_5","data[lang].slides.ifobsmobile.slideLists[1].list[1].text"],
-["#slide_7_num_6","data[lang].slides.ifobsmobile.slideLists[1].list[2].text"],
+["#slide_7_title", data[lang].slides.ifobsmobile.slideHeader],
+["#slide_7_un_title_1", data[lang].slides.ifobsmobile.slideLists[0].title],
+["#slide_7_num_1", data[lang].slides.ifobsmobile.slideLists[0].list[0].text],
+["#slide_7_num_2", data[lang].slides.ifobsmobile.slideLists[0].list[1].text],
+["#slide_7_num_3", data[lang].slides.ifobsmobile.slideLists[0].list[2].text],
+["#slide_7_un_title_2", data[lang].slides.ifobsmobile.slideLists[1].title],
+["#slide_7_num_4", data[lang].slides.ifobsmobile.slideLists[1].list[0].text],
+["#slide_7_num_5", data[lang].slides.ifobsmobile.slideLists[1].list[1].text],
+["#slide_7_num_6", data[lang].slides.ifobsmobile.slideLists[1].list[2].text],
 
-["#slide_8_title","data[lang].slides.contacts.slideHeader"],
-["#phone","data[lang].slides.contacts.contacts.phone"],
-["#phoneNumber","data[lang].slides.contacts.contacts.phoneNumber"],
-["#email","data[lang].slides.contacts.contacts.email"],
-["#kharkiv_adress","data[lang].slides.contacts.contacts.kharkivAddress"],
-["#kyiv_adress","data[lang].slides.contacts.contacts.kyivAddress"],
-["#cscompany","data[lang].slides.contacts.contacts.copy"],
-["#copyLink","data[lang].slides.contacts.contacts.copyLink"],
-["#date","data[lang].slides.contacts.contacts.date"]
+["#slide_8_title", data[lang].slides.contacts.slideHeader],
+["#phone", data[lang].slides.contacts.contacts.phone],
+["#phoneNumber", data[lang].slides.contacts.contacts.phoneNumber],
+["#email", data[lang].slides.contacts.contacts.email],
+["#kharkiv_adress", data[lang].slides.contacts.contacts.kharkivAddress],
+["#kyiv_adress", data[lang].slides.contacts.contacts.kyivAddress],
+["#cscompany", data[lang].slides.contacts.contacts.copy],
+["#copyLink", data[lang].slides.contacts.contacts.copyLink],
+["#date", data[lang].slides.contacts.contacts.date]
 ]
 
-function variables(lang, DelectorData, data) {
 	for(var i=0; i<80; i++) {
-		var text = eval(SelectorData[i][1]);
-		$(SelectorData[i][0]).html(text);
+		$(SelectorData[i][0]).html(SelectorData[i][1]);
 	}
 }
 
 $('.localiz_').click(function(){
 	var lang = $(this).data('langname');
 	local_active(this);
-	variables(lang, SelectorData, data, function() {
+	variables(lang, data, function() {
 		$('.arrow_down').addClass("opacity_style_full");	
 	});
 	//$(this).html(data[lng][lang]);
@@ -232,7 +234,6 @@ $('.js-page-control').click(function(){
 	counter=pageControl;
 	for(var i=1;i<9;i++) {
 		$('.slide'+i).removeClass('z-inverse_'+i);
-
 	}
 })
 
