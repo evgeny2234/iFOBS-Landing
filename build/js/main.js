@@ -133,38 +133,46 @@ function local_active(subj) {
 	
 $('.m_content__').click(function(){
 	var num_list = $(this).data('ulnumber');
-	console.log(num_list);
 	$(".appear_menu__").removeClass('appear_menu');
 	$(".app_menu_"+num_list).addClass('appear_menu');
+})
+
+//при мобайле показываем или скрываем блоки на слайдах 6,7
+$('.title-mob-cont').click(function(){
+	var title_mob_cont = $(this).data('containernum');
+	$(".addon-cont").removeClass('appear_menu');
+	$(".addon-container-"+title_mob_cont).addClass('appear_menu');
 })
 
 //Опускаем/поднимаем менюшку
 var check = false;
 $('.menu_up_down').click(function(){
-	if(check) {
+	if(!check) {
 		$('header').addClass('menu_click_UP');
 		$('header').removeClass('menu_click_DOWN');
-		check = false;
+		$('header').removeClass( "header_low" );
+		check = true;
 		return;
 	}
-	if(!check) {
+	if(check) {
 		$('header').removeClass('menu_click_UP');
 		$('header').addClass('menu_click_DOWN');
-		check = true;
+		$('header').removeClass( "header_low" );
+		check = false;
 		return;
 	}
 })
 
 var check2 = false;
 $('#navBARbuttonMenu').click(function(){
-	if(check) {
-		$('header').removeClass("header_ACTIVE");
-		check = false;
+	if(check2) {
+		$('.navMenu').removeClass("header_ACTIVE");
+		check2 = false;
 		return;
 	}
-	if(!check) {
-		$('header').addClass("header_ACTIVE");
-		check = true;
+	if(!check2) {
+		$('.navMenu').addClass("header_ACTIVE");
+		check2 = true;
 		return;
 	}
 })
@@ -222,12 +230,13 @@ $( ".upper_container" ).animate({
 
 	//что делаем если екран больше чем 768 px
 	function high_size() {
-		$('header').removeClass( "header_low" );
+		//$('header').removeClass( "header_low" );
 		$('#mainTitle').removeClass( "mainTitle_low" );
 		$('#welcomeMessage').removeClass( "welcomeMessage_low" );
 		$('#showMore').removeClass( "showMore_low" );
 		$('.upper_container').removeClass( "upper_container_low" );
 		$('.simple_logo').removeClass( "simple_logo_low" );
+		$('.navMenu').removeClass("header_ACTIVE");
 	}
 
 if( $(window).width()<=768) {
@@ -236,6 +245,9 @@ if( $(window).width()<=768) {
 $( window ).resize(function() {
   if( $(window).width()<=768) {
   	low_size();
+  }
+  if( $(window).width()<768) {
+  	$('.navMenu').addClass("header_ACTIVE");
   }
   else {
   	high_size();

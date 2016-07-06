@@ -27,8 +27,8 @@
  
 	</head>
 <body>
-		<input type="button" name="menu" class="menu_up_down">
-	<header>
+		<!--<input type="button" name="menu" class="menu_up_down">-->
+	<header class="header_low">
 	<div class="slider_buttons">
 		<a data-pagecounterid="1" href="#advantages_ifobs" class="js-page-control s_button sb_1"></a>
 		<a data-pagecounterid="2" href="#for_banks_ifobs" class="js-page-control s_button sb_2"></a>
@@ -38,7 +38,7 @@
 		<a data-pagecounterid="6" href="#mobile_ifobs" class="js-page-control s_button sb_6"></a>
 		<a data-pagecounterid="7" href="#contacts_ifobs" class="js-page-control s_button sb_7"></a>
 	</div>
-		<nav role="navigation" class="navbar navbar-default" id="menu">   <!-- Навигация в хедере   -->
+		<!--<nav role="navigation" class="navbar navbar-default navMenu" id="menu"> 
             <div class="navbar-header">
               <button id="navBARbuttonMenu" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navigation_header_open">
                 <span class="sr-only">Toggle navigation</span>
@@ -64,7 +64,7 @@
                     <li><a data-pagecounterid="7" id="contacts" class="js-page-control nav-click nav_l_7" href="#contacts_ifobs">КОНТАКТЫ</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>-->
 
 		<div class="localizations">
 			<input data-langname="ru" type="button" name="RU" class="localiz_ local_ru" value="RU">
@@ -190,21 +190,25 @@
 			<div class="cont contain_6">
 				<h3 id="slide_6_title"></h3>
 				<span class="e-separator"></span>
-				<h4 id="slide_6_un_title_1"></h4>
+				<h4 data-containernum="1" id="slide_6_un_title_1" class="title-mob-cont"></h4>
 				<span class="e-separator"></span>
-				<ul>
-					<li id="slide_6_num_1"></li>
-					<li id="slide_6_num_2"></li>
-					<li id="slide_6_num_3"></li>
-				</ul>
+				<div class="left_container addon-container-1 addon-cont">
+					<ul>
+						<li id="slide_6_num_1"></li>
+						<li id="slide_6_num_2"></li>
+						<li id="slide_6_num_3"></li>
+					</ul>
+				</div>
 				<span class="e-separator"></span>
-				<h4 id="slide_6_un_title_2"></h4>
+				<h4 data-containernum="2" id="slide_6_un_title_2" class="title-mob-cont"></h4>
 				<span class="e-separator"></span>
-				<ul>
-					<li id="slide_6_num_4"></li>
-					<li id="slide_6_num_5"></li>
-					<li id="slide_6_num_6"></li>
-				</ul>
+				<div class="right_container addon-container-2 addon-cont">
+					<ul>
+						<li id="slide_6_num_4"></li>
+						<li id="slide_6_num_5"></li>
+						<li id="slide_6_num_6"></li>
+					</ul>
+				</div>
 			</div>
 			<div class="background six_slide left_image"><img src="build/img/svg/_svgSecurity02.svg" ></div>
 			<div class="background six_slide right_image"><img src="build/img/svg/_svgSecurity01.svg" ></div>
@@ -212,26 +216,27 @@
 		<div data-type="background" data-speed="10" class="slide slide7" id="mobile_ifobs">
 			<div class="cont contain_7">
 				<h3 id="slide_7_title"></h3>
+				<span class="e-separator"></span>
+				<h4 data-containernum="3" id="slide_7_un_title_1" class="title-mob-cont"></h4>
+				<span class="e-separator"></span>
+				<div class="left_container addon-container-3 addon-cont">
+					<ul>
+						<li id="slide_7_num_1"></li>
+						<li id="slide_7_num_2"></li>
+						<li id="slide_7_num_3"></li>
+					</ul>
+				</div>
+				<span class="e-separator"></span>
+				<h4 data-containernum="4" id="slide_7_un_title_2" class="title-mob-cont"></h4>
+				<span class="e-separator"></span>
+				<div class="right_container addon-container-4 addon-cont">
+					<ul>
+						<li id="slide_7_num_4"></li>
+						<li id="slide_7_num_5"></li>
+						<li id="slide_7_num_6"></li>
+					</ul>
+				</div>
 				
-				<span class="e-separator"></span>
-				<h4 id="slide_7_un_title_1"></h4>
-				<span class="e-separator"></span>
-
-				<ul>
-					<li id="slide_7_num_1"></li>
-					<li id="slide_7_num_2"></li>
-					<li id="slide_7_num_3"></li>
-				</ul>
-
-				<span class="e-separator"></span>
-				<h4 id="slide_7_un_title_2"></h4>
-				<span class="e-separator"></span>
-
-				<ul>
-					<li id="slide_7_num_4"></li>
-					<li id="slide_7_num_5"></li>
-					<li id="slide_7_num_6"></li>
-				</ul>
 			</div>
 			<div class="background seventh_slide left_image"><img src="build/img/svg/_svgMobile01.svg" ></div>
 			<div class="background seventh_slide right_image"><img src="build/img/svg/_svgMobile02.svg" ></div>
