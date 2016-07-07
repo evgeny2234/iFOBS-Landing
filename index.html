@@ -1,277 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-
 		<title>iFOBS</title>
-
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-
 	    <link rel="icon" href="./build/img/background/favicon.png" type="image/png">
 	    <link rel="shortcut icon" href="./build/img/background/favicon.png" type="image/png">
-
 		<script type="text/javascript" src="build/dependencies/jquery/dist/jquery.min.js"></script>  <!-- jQuery -->
-
 	    <link rel="stylesheet" href="build/dependencies/bootstrap/dist/css/bootstrap.css"/>  <!-- БУТСТРАП -->
 	    <link rel="stylesheet" href="build/css/style.css"/>  <!-- МОИ СТИЛИ -->
-
 	    <script type="text/javascript" src="build/dependencies/bootstrap/dist/js/bootstrap.min.js"></script>  <!-- БУТСТРАП Js -->
-
 		<script src="http://webext.ru/wp-content/uploads/2012/03/jquery.mousewheel.js"></script>
-
 		<script type="text/javascript" src="build/dependencies/vivus/dist/vivus.js"></script>
-
 	    <script type="text/javascript" src="build/js/main.js"></script>   <!-- Мои скрипты -->
-
-
- 
 	</head>
-<body>
-		<!--<input type="button" name="menu" class="menu_up_down">-->
-	<header class="header_low">
-	<div class="slider_buttons">
-		<a data-pagecounterid="1" href="#advantages_ifobs" class="js-page-control s_button sb_1"></a>
-		<a data-pagecounterid="2" href="#for_banks_ifobs" class="js-page-control s_button sb_2"></a>
-		<a data-pagecounterid="3" href="#coorporate_ifobs" class="js-page-control s_button sb_3"></a>
-		<a data-pagecounterid="4" href="#private_clients_ifobs" class="js-page-control s_button sb_4"></a>
-		<a data-pagecounterid="5" href="#sequrity_ifobs" class="js-page-control s_button sb_5"></a>
-		<a data-pagecounterid="6" href="#mobile_ifobs" class="js-page-control s_button sb_6"></a>
-		<a data-pagecounterid="7" href="#contacts_ifobs" class="js-page-control s_button sb_7"></a>
-	</div>
-		<!--<nav role="navigation" class="navbar navbar-default navMenu" id="menu"> 
-            <div class="navbar-header">
-              <button id="navBARbuttonMenu" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navigation_header_open">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navigation">
-                    <li><a data-pagecounterid="1" id="advantages" class="js-page-control nav-click nav_l_1" href="#advantages_ifobs">ПРЕИМУЩЕСТВА</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="2" id="for_banks" class="js-page-control nav-click nav_l_2" href="#for_banks_ifobs">БАНКАМ</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="3" id="corp_clients" class="js-page-control nav-click nav_l_3" href="#coorporate_ifobs">КОРПОРАТИВНЫМ КЛИЕНТАМ</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="4" id="private_clients" class="js-page-control nav-click nav_l_4" href="#private_clients_ifobs">ЧАСТНЫМ КЛИЕНТАМ</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="5" id="sequrity" class="js-page-control nav-click nav_l_5" href="#sequrity_ifobs">БЕЗОПАСНОСТЬ</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="6" id="ifobs_mobile" class="js-page-control nav-click nav_l_6" href="#mobile_ifobs">IFOBS.MOBILE</a></li>
-                    <li class="nav-border"></li>
-                    <li><a data-pagecounterid="7" id="contacts" class="js-page-control nav-click nav_l_7" href="#contacts_ifobs">КОНТАКТЫ</a></li>
-                </ul>
-            </div>
-        </nav>-->
 
-		<div class="localizations">
-			<input data-langname="ru" type="button" name="RU" class="localiz_ local_ru" value="RU">
-			<input data-langname="ua" type="button" name="UA" class="localiz_ local_ua" value="UA">
-			<input data-langname="en" type="button" name="EN" class="localiz_ local_en" value="EN">
+	<body id="body">
+	<!--<input type="button" name="menu" class="menu_up_down">-->
+		<header class="header_low">
+		<div class="slider_buttons">
+			<a data-pagecounterid="1" href="#advantages_ifobs" class="js-page-control s_button sb_1"></a>
+			<a data-pagecounterid="2" href="#for_banks_ifobs" class="js-page-control s_button sb_2"></a>
+			<a data-pagecounterid="3" href="#coorporate_ifobs" class="js-page-control s_button sb_3"></a>
+			<a data-pagecounterid="4" href="#private_clients_ifobs" class="js-page-control s_button sb_4"></a>
+			<a data-pagecounterid="5" href="#sequrity_ifobs" class="js-page-control s_button sb_5"></a>
+			<a data-pagecounterid="6" href="#mobile_ifobs" class="js-page-control s_button sb_6"></a>
+			<a data-pagecounterid="7" href="#contacts_ifobs" class="js-page-control s_button sb_7"></a>
 		</div>
-
-		<div class="simple_logo">iFOBS</div>
-
-	</header>
-
-
-
-
-	<main>
-
-		<div data-type="background" data-speed="10" class="slide slide1" id="first_slide_main">
-			<div class="upper_container">
-				<h1 id="mainTitle"></h1>
-				<h2 id="welcomeMessage"></h2>
+			<!--<nav role="navigation" class="navbar navbar-default navMenu" id="menu"> 
+	            <div class="navbar-header">
+	              <button id="navBARbuttonMenu" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navigation_header_open">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	              </button>
+	            </div>
+	            <div id="navbarCollapse" class="collapse navbar-collapse">
+	                <ul class="nav navbar-nav navigation">
+	                    <li><a data-pagecounterid="1" id="advantages" class="js-page-control nav-click nav_l_1" href="#advantages_ifobs">ПРЕИМУЩЕСТВА</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="2" id="for_banks" class="js-page-control nav-click nav_l_2" href="#for_banks_ifobs">БАНКАМ</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="3" id="corp_clients" class="js-page-control nav-click nav_l_3" href="#coorporate_ifobs">КОРПОРАТИВНЫМ КЛИЕНТАМ</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="4" id="private_clients" class="js-page-control nav-click nav_l_4" href="#private_clients_ifobs">ЧАСТНЫМ КЛИЕНТАМ</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="5" id="sequrity" class="js-page-control nav-click nav_l_5" href="#sequrity_ifobs">БЕЗОПАСНОСТЬ</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="6" id="ifobs_mobile" class="js-page-control nav-click nav_l_6" href="#mobile_ifobs">IFOBS.MOBILE</a></li>
+	                    <li class="nav-border"></li>
+	                    <li><a data-pagecounterid="7" id="contacts" class="js-page-control nav-click nav_l_7" href="#contacts_ifobs">КОНТАКТЫ</a></li>
+	                </ul>
+	            </div>
+	        </nav>-->
+			<div class="localizations">
+				<input data-langname="ru" type="button" name="RU" class="localiz_ local_ru" value="RU">
+				<input data-langname="ua" type="button" name="UA" class="localiz_ local_ua" value="UA">
+				<input data-langname="en" type="button" name="EN" class="localiz_ local_en" value="EN">
 			</div>
-			<div class="down_container">
-				<a data-pagecounterid="1" href="#advantages_ifobs" id="showMore" class="js-page-control">
-					<i class="arrow_down"></i>
-				</a>
-				
-			</div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide2" id="advantages_ifobs">
-			<h3 id="five_reasons" class="contain_2"></h3>
+			<div class="simple_logo">iFOBS</div>
 
-			<div class="monitor_content row contain_2">
-				<div class="m_content__ m_content_1 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="1">
-					<h2 id="s_slider_title_1"></h2>
-						<ul  class="appear_menu__ app_menu_1 appear_menu">
-							<li id="title_1_1"></li>
-							<li id="title_1_2"></li>
-							<li id="title_1_3"></li>
-						</ul>
+		</header>
+		<main>
+			<!-- Первый слайд -->
+			<div data-type="background" data-speed="10" class="slide slide1" id="first_slide_main">
+				<div class="upper_container">
+					<h1 id="mainTitle"></h1>
+					<h2 id="welcomeMessage"></h2>
 				</div>
-				<div class="m_content__ m_content_2 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="2">
-					<h2 id="s_slider_title_2"></h2>
-						<ul  class="appear_menu__ app_menu_2">
-							<li id="title_2_1"></li>
-							<li id="title_2_2"></li>
-							<li id="title_2_3"></li>
-							<li id="title_2_4"></li>
-							<li id="title_2_5"></li>
-						</ul>
-				</div>
-				<div class="m_content__ m_content_3 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="3">
-					<h2 id="s_slider_title_3"></h2>
-						<ul  class="appear_menu__ app_menu_3">
-							<li id="title_3_1"></li>
-							<li id="title_3_2"></li>
-							<li id="title_3_3"></li>
-						</ul>
-				</div>
-				<div class="m_content__ m_content_4 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="4">
-					<h2 id="s_slider_title_4"></h2>
-						<ul  class="appear_menu__ app_menu_4">
-							<li id="title_4_1"></li>
-							<li id="title_4_2"></li>
-							<li id="title_4_3"></li>
-							<li id="title_4_4"></li>
-						</ul>
-				</div>
-				<div class="m_content__ m_content_5 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="5">
-					<h2 id="s_slider_title_5"></h2>
-						<ul  class="appear_menu__ app_menu_5">
-							<li id="title_5_1"></li>
-							<li id="title_5_2"></li>
-							<li id="title_5_3"></li>
-						</ul>
+				<div class="down_container">
+					<a data-pagecounterid="1" href="#advantages_ifobs" id="showMore" class="js-page-control">
+						<i class="arrow_down"></i>
+					</a>
+					
 				</div>
 			</div>
-			<div class="display_content">
-				
-			</div>
 
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide3" id="for_banks_ifobs">
-			<div class="cont contain_3">
-				<h3 id="slide_3_title"></h3>
-				<ul>
-					<li id="slide_3_num_1"></li>
-					<li id="slide_3_num_2"></li>
-					<li id="slide_3_num_3"></li>
-					<li id="slide_3_num_4"></li>
-					<li id="slide_3_num_5"></li>
-				</ul>
-			</div>
-			<div class="background third_slide left_image"><img src="build/img/svg/_svgBank01.svg" ></div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide4" id="coorporate_ifobs">
-			<div class="cont contain_4">
-				<h3 id="slide_4_title"></h3>
-				<ul>
-					<li id="slide_4_num_1"></li>
-					<li id="slide_4_num_2"></li>
-					<li id="slide_4_num_3"></li>
-					<li id="slide_4_num_4"></li>
-					<li id="slide_4_num_5"></li>
-				</ul>
-			</div>
-			<div class="background fourth_slide left_image"><img src="build/img/svg/_svgCorporate02.svg" ></div>
-			<div class="background fourth_slide right_image"><img src="build/img/svg/_svgCorporate01.svg" ></div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide5" id="private_clients_ifobs">
-			<div class="cont contain_5">
-				<h3 id="slide_5_title"></h3>
-				<ul>
-					<li id="slide_5_num_1"></li>
-					<li id="slide_5_num_2"></li>
-					<li id="slide_5_num_3"></li>
-					<li id="slide_5_num_4"></li>
-					<li id="slide_5_num_5"></li>
-				</ul>
-			</div>
-			<div class="background fifth_slide left_image"><img src="build/img/svg/_svgPrivate01.svg" ></div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide6" id="sequrity_ifobs">
-			<div class="cont contain_6">
-				<h3 id="slide_6_title"></h3>
-				<span class="e-separator"></span>
-				<h4 data-containernum="1" id="slide_6_un_title_1" class="title-mob-cont"></h4>
-				<span class="e-separator"></span>
-				<div class="left_container addon-container-1 addon-cont">
-					<ul>
-						<li id="slide_6_num_1"></li>
-						<li id="slide_6_num_2"></li>
-						<li id="slide_6_num_3"></li>
-					</ul>
-				</div>
-				<span class="e-separator"></span>
-				<h4 data-containernum="2" id="slide_6_un_title_2" class="title-mob-cont"></h4>
-				<span class="e-separator"></span>
-				<div class="right_container addon-container-2 addon-cont">
-					<ul>
-						<li id="slide_6_num_4"></li>
-						<li id="slide_6_num_5"></li>
-						<li id="slide_6_num_6"></li>
-					</ul>
-				</div>
-			</div>
-			<div class="background six_slide left_image"><img src="build/img/svg/_svgSecurity02.svg" ></div>
-			<div class="background six_slide right_image"><img src="build/img/svg/_svgSecurity01.svg" ></div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide7" id="mobile_ifobs">
-			<div class="cont contain_7">
-				<h3 id="slide_7_title"></h3>
-				<span class="e-separator"></span>
-				<h4 data-containernum="3" id="slide_7_un_title_1" class="title-mob-cont"></h4>
-				<span class="e-separator"></span>
-				<div class="left_container addon-container-3 addon-cont">
-					<ul>
-						<li id="slide_7_num_1"></li>
-						<li id="slide_7_num_2"></li>
-						<li id="slide_7_num_3"></li>
-					</ul>
-				</div>
-				<span class="e-separator"></span>
-				<h4 data-containernum="4" id="slide_7_un_title_2" class="title-mob-cont"></h4>
-				<span class="e-separator"></span>
-				<div class="right_container addon-container-4 addon-cont">
-					<ul>
-						<li id="slide_7_num_4"></li>
-						<li id="slide_7_num_5"></li>
-						<li id="slide_7_num_6"></li>
-					</ul>
-				</div>
-				
-			</div>
-			<div class="background seventh_slide left_image"><img src="build/img/svg/_svgMobile01.svg" ></div>
-			<div class="background seventh_slide right_image"><img src="build/img/svg/_svgMobile02.svg" ></div>
-		</div>
-		<div data-type="background" data-speed="10" class="slide slide8" id="contacts_ifobs">
-			<div class="cont contain_8">
-				<h3 id="slide_8_title"></h3>
-				<span class="e-separator"></span>
-				<p><b id="phone"></b> <span id="phoneNumber"></span></p>
-				<p><b id="email"></b> <span id="copyLink"></span></p>
-				<span class="e-separator"></span>
-
-				<div class="left_cont container_8_slide">
-					<address id="kyiv_adress"></address>
-					<div class="left_map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.8889344345926!2d30.51542231600714!3d50.443169395770155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sru!4v1466604176458" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!-- Второй слайд -->
+			<div data-type="background" data-speed="10" class="slide slide2" id="advantages_ifobs">
+				<h3 id="five_reasons" class="contain_2"></h3>
+				<div class="monitor_content row contain_2">
+					<div class="m_content__ m_content_1 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="1">
+						<h2 id="s_slider_title_1"></h2>
+							<ul  class="appear_menu__ app_menu_1 appear_menu">
+								<li id="title_1_1"></li>
+								<li id="title_1_2"></li>
+								<li id="title_1_3"></li>
+							</ul>
+					</div>
+					<div class="m_content__ m_content_2 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="2">
+						<h2 id="s_slider_title_2"></h2>
+							<ul  class="appear_menu__ app_menu_2">
+								<li id="title_2_1"></li>
+								<li id="title_2_2"></li>
+								<li id="title_2_3"></li>
+								<li id="title_2_4"></li>
+								<li id="title_2_5"></li>
+							</ul>
+					</div>
+					<div class="m_content__ m_content_3 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="3">
+						<h2 id="s_slider_title_3"></h2>
+							<ul  class="appear_menu__ app_menu_3">
+								<li id="title_3_1"></li>
+								<li id="title_3_2"></li>
+								<li id="title_3_3"></li>
+							</ul>
+					</div>
+					<div class="m_content__ m_content_4 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="4">
+						<h2 id="s_slider_title_4"></h2>
+							<ul  class="appear_menu__ app_menu_4">
+								<li id="title_4_1"></li>
+								<li id="title_4_2"></li>
+								<li id="title_4_3"></li>
+								<li id="title_4_4"></li>
+							</ul>
+					</div>
+					<div class="m_content__ m_content_5 col-lg-2-6 col-md-2-6 col-sm-2-6 col-xs-2-6" data-ulnumber="5">
+						<h2 id="s_slider_title_5"></h2>
+							<ul  class="appear_menu__ app_menu_5">
+								<li id="title_5_1"></li>
+								<li id="title_5_2"></li>
+								<li id="title_5_3"></li>
+							</ul>
 					</div>
 				</div>
-				<div class="right_cont container_8_slide">
-					<address id="kharkiv_adress"></address>
-					<div class="right_map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.919008724452!2d36.22086181599699!3d50.03161342533554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1355bdefbd3%3A0xf4b884e06b1b2116!2z0LLRg9C7LiDQotC-0LHQvtC70YzRgdGM0LrQsCwgNDIsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sru!4v1466604084468" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+
+			<!-- Третий слайд -->
+			<div data-type="background" data-speed="10" class="slide slide3" id="for_banks_ifobs">
+				<div class="cont contain_3">
+					<h3 id="slide_3_title"></h3>
+					<ul>
+						<li id="slide_3_num_1"></li>
+						<li id="slide_3_num_2"></li>
+						<li id="slide_3_num_3"></li>
+						<li id="slide_3_num_4"></li>
+						<li id="slide_3_num_5"></li>
+					</ul>
+				</div>
+				<div class="background third_slide left_image"><img src="build/img/svg/_svgBank01.svg" alt="background img"></div>
+			</div>
+
+			<!-- Четвертый слайд -->
+			<div data-type="background" data-speed="10" class="slide slide4" id="coorporate_ifobs">
+				<div class="cont contain_4">
+					<h3 id="slide_4_title"></h3>
+					<ul>
+						<li id="slide_4_num_1"></li>
+						<li id="slide_4_num_2"></li>
+						<li id="slide_4_num_3"></li>
+						<li id="slide_4_num_4"></li>
+						<li id="slide_4_num_5"></li>
+					</ul>
+				</div>
+				<div class="background fourth_slide left_image"><img src="build/img/svg/_svgCorporate02.svg" alt="background img"></div>
+				<div class="background fourth_slide right_image"><img src="build/img/svg/_svgCorporate01.svg" alt="background img"></div>
+			</div>
+
+			<!-- Пятый слайд -->
+			<div data-type="background" data-speed="10" class="slide slide5" id="private_clients_ifobs">
+				<div class="cont contain_5">
+					<h3 id="slide_5_title"></h3>
+					<ul>
+						<li id="slide_5_num_1"></li>
+						<li id="slide_5_num_2"></li>
+						<li id="slide_5_num_3"></li>
+						<li id="slide_5_num_4"></li>
+						<li id="slide_5_num_5"></li>
+					</ul>
+				</div>
+				<div class="background fifth_slide left_image"><img src="build/img/svg/_svgPrivate01.svg" alt="background img"></div>
+			</div>
+
+			<!-- Шестой слайд -->
+			<div data-type="background" data-speed="10" class="slide slide6" id="sequrity_ifobs">
+				<div class="cont contain_6">
+					<h3 id="slide_6_title"></h3>
+					<span class="e-separator"></span>
+					<h4 data-containernum="1" id="slide_6_un_title_1" class="title-mob-cont mob-title-1"></h4>
+					<span class="e-separator"></span>
+					<div class="left_container addon-container-1 addon-cont">
+						<ul>
+							<li id="slide_6_num_1"></li>
+							<li id="slide_6_num_2"></li>
+							<li id="slide_6_num_3"></li>
+						</ul>
+					</div>
+					<span class="e-separator"></span>
+					<h4 data-containernum="2" id="slide_6_un_title_2" class="title-mob-cont mob-title-2"></h4>
+					<span class="e-separator"></span>
+					<div class="right_container addon-container-2 addon-cont">
+						<ul>
+							<li id="slide_6_num_4"></li>
+							<li id="slide_6_num_5"></li>
+							<li id="slide_6_num_6"></li>
+						</ul>
 					</div>
 				</div>
-				<p class="company_copyright"><b id="date"></b> <span id="cscompany"></span></p>
+				<div class="background six_slide left_image">
+					<img src="build/img/svg/_svgSecurity02.svg" alt="background img">
+				</div>
+				<div class="background six_slide right_image">
+					<img src="build/img/svg/_svgSecurity01.svg" alt="background img">
+				</div>
 			</div>
-			
-		</div>
 
-	</main>
+			<!-- Седьмой слайд -->
+			<div data-type="background" data-speed="10" class="slide slide7" id="mobile_ifobs">
+				<div class="cont contain_7">
+					<h3 id="slide_7_title"></h3>
+					<span class="e-separator"></span>
+					<h4 data-containernum="3" id="slide_7_un_title_1" class="title-mob-cont mob-title-3"></h4>
+					<span class="e-separator"></span>
+					<div class="left_container addon-container-3 addon-cont">
+						<ul>
+							<li id="slide_7_num_1"></li>
+							<li id="slide_7_num_2"></li>
+							<li id="slide_7_num_3"></li>
+						</ul>
+					</div>
+					<span class="e-separator"></span>
+					<h4 data-containernum="4" id="slide_7_un_title_2" class="title-mob-cont mob-title-4"></h4>
+					<span class="e-separator"></span>
+					<div class="right_container addon-container-4 addon-cont">
+						<ul>
+							<li id="slide_7_num_4"></li>
+							<li id="slide_7_num_5"></li>
+							<li id="slide_7_num_6"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="background seventh_slide left_image">
+					<img src="build/img/svg/_svgMobile01.svg" alt="background img">
+				</div>
+				<div class="background seventh_slide right_image">
+					<img src="build/img/svg/_svgMobile02.svg" alt="background img">
+				</div>
+			</div>
 
-<a href="#top" class="some_link">Go to page top</a>
+			<!-- Восьмой слайд -->
+			<div data-type="background" data-speed="10" class="slide slide8" id="contacts_ifobs">
+				<div class="cont contain_8">
+					<h3 id="slide_8_title"></h3>
+					<span class="e-separator"></span>
+					<p><b id="phone"></b> <span id="phoneNumber"></span></p>
+					<p><b id="email"></b> <span id="copyLink"></span></p>
+					<span class="e-separator"></span>
+					<div class="left_cont container_8_slide">
+						<address id="kyiv_adress"></address>
+						<div class="left_map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.8889344345926!2d30.51542231600714!3d50.443169395770155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sru!4v1466604176458" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="right_cont container_8_slide">
+						<address id="kharkiv_adress"></address>
+						<div class="right_map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.919008724452!2d36.22086181599699!3d50.03161342533554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1355bdefbd3%3A0xf4b884e06b1b2116!2z0LLRg9C7LiDQotC-0LHQvtC70YzRgdGM0LrQsCwgNDIsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sru!4v1466604084468" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<p class="company_copyright"><b id="date"></b><span id="cscompany"></span></p>
+				</div>
+			</div>
 
+		</main>
 
-
-</body>
-
+	</body>
 </html>

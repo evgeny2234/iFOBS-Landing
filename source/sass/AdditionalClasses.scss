@@ -1,0 +1,115 @@
+.menu_click_UP {
+		top: -60px !important;
+		transition: 1s !important;
+	}
+	.menu_click_DOWN {
+		top: 0px !important;
+		transition: 1s !important;
+	}
+	.showMore_animate {
+		display: block !important;
+		opacity: 1 !important;
+		cursor: pointer !important;
+	}
+	.header_low {
+		top:0px !important;
+	}
+	.mainTitle_low {
+		font-size:24vw !important;
+	}
+	.welcomeMessage_low {
+		font-size:3.5vw !important;
+	}
+	.showMore_low {
+		font-size:3.5vw !important;
+	}
+	.upper_container_low {
+		padding-top:10vh !important;
+	}
+	.simple_logo_low {
+		//top: 60px !important;
+		//font-size: 6vw !important;
+		margin: 15px !important;
+	}
+	.opacity_style_none {
+		opacity: 0 !important;
+		cursor: default;
+		display: none !important;
+	}
+	.opacity_style_full {
+		transition: 3s;
+		opacity: 1 !important;
+		cursor: pointer;
+		display: block;
+	}
+	.showMore_full {
+		display: block;
+		opacity: 1;
+		cursor: pointer;
+	}
+	.s_button_active {
+		background-color: rgba(255,255,255,1) !important;
+	}
+	.nav_click_active {
+		opacity: 1 !important;
+		color: white !important;
+	}
+	.s_button_opacity {
+		opacity: 1 !important;
+		transition-timing-function: ease-in !important;
+	}
+	.localizations_active {
+		opacity: 0.4;
+		transition: 0.5s;
+	}
+	.cont_fixed {
+	    position: fixed !important;
+	    top: 0px !important;
+	}
+	.z-inverse_1 {
+		z-index: 1000 !important;
+	}
+	.z-inverse_2 {
+		z-index: 999 !important;
+	}
+	.z-inverse_3 {
+		z-index: 998 !important;
+	}
+	.z-inverse_4 {
+		z-index: 997 !important;
+	}
+	.z-inverse_5 {
+		z-index: 996 !important;
+	}
+	.z-inverse_6 {
+		z-index: 995 !important;
+	}
+	.z-inverse_7 {
+		z-index: 994 !important;
+	}
+	.z-inverse_8 {
+		z-index: 993 !important;
+	}
+	.backpos_up {
+		background-position-y: -25vh !important;
+		transition: 1.5s;
+	}
+	.backpos_down {
+		background-position-y: 0vh !important;
+		transition: 1.5s;
+	}
+	.header_ACTIVE {
+		background-color: rgba(0,0,0,0.8) !important;
+		box-shadow: 0 20px 40px rgba(0,0,0,0.6) !important;
+   		transition: 1s !important;
+	}
+	.appear_menu {
+		display: block !important;
+		transition: 0.5s;
+	}
+	.active_h_item {
+		font-weight: bold !important;
+	}
+	.visibleArrow { 	    
+	    visibility: visible !important;
+	}

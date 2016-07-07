@@ -1,7 +1,13 @@
 $(document).ready(function () {
+
+var browser = "none";
+if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ){
+	browser = "ie";
+}
+
 //открываем сайт всегда с первого слайда
 $(window).on( 'load', function() {
-	$('body').animate({
+	$('html, body').animate({
 	scrollTop: 0
 	}, 1);
 });
@@ -16,8 +22,6 @@ success: function(dataLang) {
 });
 
 var lang = "ru";  //изначально ставим русский
-
-
 
 function variables(lang, data) {
 
@@ -110,7 +114,6 @@ var SelectorData = [
 ["#copyLink", data[lang].slides.contacts.contacts.copyLink],
 ["#date", data[lang].slides.contacts.contacts.date]
 ]
-
 	for(var i=0; i<80; i++) {
 		$(SelectorData[i][0]).html(SelectorData[i][1]);
 	}
@@ -139,6 +142,13 @@ $('.m_content__').click(function(){
 
 //при мобайле показываем или скрываем блоки на слайдах 6,7
 $('.title-mob-cont').click(function(){
+	var afterNum = $(this).data('containernum');
+	$('.title-mob-cont').removeClass('active_h_item');
+	$('.arrow_down').removeClass('visibleArrow');
+	$('.mob-title-'+afterNum+" i").addClass('visibleArrow');
+
+	$(this).addClass('active_h_item');
+	
 	var title_mob_cont = $(this).data('containernum');
 	$(".addon-cont").removeClass('appear_menu');
 	$(".addon-container-"+title_mob_cont).addClass('appear_menu');
@@ -186,7 +196,7 @@ $( ".upper_container" ).animate({
   		opacity: 1
   	}, 3000, function f1() {
   		$('#showMore').addClass('showMore_animate');
-  		$('.arrow_down').addClass("opacity_style_full");
+  		//$('.arrow_down').addClass("opacity_style_full");
   	});
 });
 
@@ -237,6 +247,7 @@ $( ".upper_container" ).animate({
 		$('.upper_container').removeClass( "upper_container_low" );
 		$('.simple_logo').removeClass( "simple_logo_low" );
 		$('.navMenu').removeClass("header_ACTIVE");
+		$('.arrow_down').removeClass('visibleArrow');
 	}
 
 if( $(window).width()<=768) {
@@ -305,57 +316,6 @@ function z_inverse_remove() {
 	$('.cont, .contain_1, .contain_2').removeClass('cont_fixed');
 }
 
-
-//плавный скролл по сайту колесиком
-window.onmousewheel = function(e) {
-
-var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
-
-	if(listener) {
-		return;
-	}
-	listener = true;
-    var delta = e.deltaY || e.detail || e.wheelDelta;
-    if(delta<0) {
-		if(counter>1) {
-			back_parallax_up(counter);  //эффект параллакса для фона при прокрутке вверх
-			z_inverse_add();
-			$('.contain_'+counter).removeClass('cont_fixed'); //эффект парраллакса для темных блоков
-			counter--;
-			$('.contain_'+(counter+2)).addClass('cont_fixed');  //эффект парраллакса для темных блоков
-			slider_buttons(counter);
-    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
-    			listener = false;
-    		});
-	    	}
-	    	else {
-	    		listener = false;
-	    	}
-    }
-    if(delta>0) {
-    	if(counter<=6) {
- 			z_inverse_remove()
-    		counter++;
-    		$('.contain_'+counter).addClass('cont_fixed'); //эффект парраллакса для темных блоков
-    		$(".s_button").addClass('s_button_opacity');  //плавеное появление кнопок слайдера
-    		slider_buttons(counter);
-    		if(counter==1) {
-    			secondAnimation ();
-    		}
-    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
-    			listener = false;
-    		});
-    		back_parallax_down(counter); //эффект параллакса для фона при прокрутке вниз
-    	}
-    	else {
-    		listener = false;
-    	}
-    }
-    e.preventDefault();
-    e.stopPropagation();
-}
-
-
 function back_parallax_up(counter) {
 	$('.slide'+counter).css({
 		"backgroundPositionY": "-2vh"
@@ -384,18 +344,84 @@ $("#menu").on("click","a", function (event) {
 	//узнаем высоту от начала страницы до блока на который ссылается якорь
 		top = $(id).offset().top;
 	//анимируем переход на расстояние - top за 1500 мс
-	$('body').animate({scrollTop: top}, 2000);
+	$('html, body').animate({scrollTop: top}, 2000);
 });
-$("a").on("click", function (event) {
+
+$(".js-page-control").on("click", function (event) {
 	event.preventDefault();
 	var id  = $(this).attr('href'),
 	top = $(id).offset().top;
-	$('body').animate({scrollTop: top}, 2000);
+	$('html, body').animate({scrollTop: top}, 2000);
 });
 
-
-
-
+//плавный скролл по колесику
+var elem = document.getElementById('body');
+    if (elem.addEventListener) {
+      if ('onwheel' in document) {
+        // IE9+, FF17+
+        elem.addEventListener("wheel", onWheel);
+      } else if ('onmousewheel' in document) {
+        // устаревший вариант события
+        elem.addEventListener("mousewheel", onWheel);
+      } else {
+        // Firefox < 17
+        elem.addEventListener("MozMousePixelScroll", onWheel);
+      }
+    } else { // IE8-
+      elem.attachEvent("onmousewheel", onWheel);
+    }
+    // Это решение предусматривает поддержку IE8-
+    function onWheel(e) {
+        e = e || window.event;
+        // deltaY, detail содержат пиксели
+        // wheelDelta не дает возможность узнать количество пикселей
+        // onwheel || MozMousePixelScroll || onmousewheel
+        var delta = e.deltaY || e.detail || e.wheelDelta;
+        if(browser == "ie") {
+      	    delta = -delta;
+        }
+		var array = [ $('#first_slide_main').offset().top, $('#advantages_ifobs').offset().top, $('#for_banks_ifobs').offset().top, $('#coorporate_ifobs').offset().top, $('#private_clients_ifobs').offset().top, $('#sequrity_ifobs').offset().top, $('#mobile_ifobs').offset().top, $('#contacts_ifobs').offset().top]
+		if(listener) {
+			return;
+		}
+		listener = true;
+	    if(delta<0) {
+			if(counter>1) {
+				back_parallax_up(counter);  //эффект параллакса для фона при прокрутке вверх
+				z_inverse_add();
+				$('.contain_'+counter).removeClass('cont_fixed'); //эффект парраллакса для темных блоков
+				counter--;
+				$('.contain_'+(counter+2)).addClass('cont_fixed');  //эффект парраллакса для темных блоков
+				slider_buttons(counter);
+	    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
+	    			listener = false;
+	    		});
+		    	}
+		    	else {
+		    		listener = false;
+		    	}
+	    }
+	    if(delta>0) {
+	    	if(counter<=6) {
+	 			z_inverse_remove()
+	    		counter++;
+	    		$('.contain_'+counter).addClass('cont_fixed'); //эффект парраллакса для темных блоков
+	    		$(".s_button").addClass('s_button_opacity');  //плавеное появление кнопок слайдера
+	    		slider_buttons(counter);
+	    		if(counter==1) {
+	    			secondAnimation ();
+	    		}
+	    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
+	    			listener = false;
+	    		});
+	    		back_parallax_down(counter); //эффект параллакса для фона при прокрутке вниз
+	    	}
+	    	else {
+	    		listener = false;
+	    	}
+	    }
+	    e.preventDefault();
+	    e.stopPropagation();
+    }
 
 });
-

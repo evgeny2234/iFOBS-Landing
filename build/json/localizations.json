@@ -34,7 +34,7 @@
         }
       ],
       "welcomeMessage": "Добро пожаловать в интернет-банкинг",
-      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS"
+      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS <i class=\"arrow_down\"></i>"
     },
     "slides": {
       "advantages": {
@@ -177,7 +177,7 @@
         "slideHeader": "<b>Безопасность</b>",
         "slideLists": [
           {
-            "title": "<b>Базовый</b> уровень безопасности",
+            "title": "Базовый уровень безопасности <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -193,7 +193,7 @@
               }
             ]},
           {
-            "title": "<b>Дополнительный</b> уровень",
+            "title": "Дополнительный уровень <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -215,7 +215,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "<b>Корпоративным</b> клиентам",
+            "title": "Корпоративным клиентам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -231,7 +231,7 @@
               }
             ]},
           {
-            "title": "<b>Частным</b> клиентам",
+            "title": "Частным клиентам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -304,7 +304,7 @@
         }
       ],
       "welcomeMessage": "Вітаємо в інтернет-банкінгу",
-      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS"
+      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS <i class=\"arrow_down\"></i>"
     },
     "slides": {
       "advantages": {
@@ -447,7 +447,7 @@
         "slideHeader": "<b>Безпека</b>",
         "slideLists": [
           {
-            "title": "<b>Базовий</b> рівень безпеки",
+            "title": "Базовий рівень безпеки <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -463,7 +463,7 @@
               }
             ]},
           {
-            "title": "<b>Додатковий</b> рівень",
+            "title": "Додатковий рівень <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -485,7 +485,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "<b>Корпоративним</b> клієнтам",
+            "title": "Корпоративним клієнтам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -501,7 +501,7 @@
               }
             ]},
           {
-            "title": "<b>Приватним </b> клієнтам",
+            "title": "Приватним клієнтам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -574,7 +574,7 @@
         }
       ],
       "welcomeMessage": "Welcome to online banking",
-      "learnMore": "LEARN MORE ABOUT iFOBS"
+      "learnMore": "LEARN MORE ABOUT iFOBS <i class=\"arrow_down\"></i>"
     },
     "slides": {
       "advantages": {
@@ -717,7 +717,7 @@
         "slideHeader": "<b>Security</b>",
         "slideLists": [
           {
-            "title": "<b>Basic</b> security level",
+            "title": "Basic security level <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -733,7 +733,7 @@
               }
             ]},
           {
-            "title": "<b>Additional</b> protection",
+            "title": "Additional protection <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -755,7 +755,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "For <b>Corporate</b> customers",
+            "title": "For Corporate customers <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -771,7 +771,7 @@
               }
             ]},
           {
-            "title": "For <b>private</b> customers",
+            "title": "For private customers <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
