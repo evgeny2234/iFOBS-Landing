@@ -12,16 +12,25 @@ $(window).on( 'load', function() {
 	}, 1);
 });
 
-var data;
-$.get({
-url: 'build/json/localizations.json',
-success: function(dataLang) {
-	data = dataLang;
-		variables(lang, data);
-	}
+var lang = "ru";  //изначально ставим русский
+function loadJSON(callback) {
+    var request = new XMLHttpRequest();
+    request.overrideMimeType("application/json");
+    request.open('GET', 'build/json/localizations.json', true);
+    request.onreadystatechange = function() {
+        if (request.readyState == 4 && request.status == "200")
+        {
+            callback(request.responseText);
+        }
+    }
+request.send(null);
+}
+var data
+loadJSON(function(response) {
+	data = JSON.parse(response);
+	variables(lang, data);
 });
 
-var lang = "ru";  //изначально ставим русский
 
 function variables(lang, data) {
 

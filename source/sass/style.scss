@@ -665,6 +665,7 @@
 						    font-size: 1.8em;
 							font-family: roboto;
 							text-shadow: 1px 1px 5px rgba(0,0,0,.7);
+							cursor: pointer;
 							@media(max-width: 768px) {
 								display: inline-block;
 								width: 48%;
@@ -763,9 +764,7 @@
 									}
 								}
 							}
-
 						}
-						
 					}
 				}
 				> .slide7 {
@@ -809,6 +808,7 @@
 						    font-size: 1.8em;
 							font-family: roboto;
 							text-shadow: 1px 1px 5px rgba(0,0,0,.7);
+							cursor: pointer;
 							@media(max-width: 768px) {
 								display: inline-block;
 								width: 40%;
