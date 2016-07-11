@@ -239,10 +239,7 @@
 							font-family: Roboto;
 							@media(max-width: 1024px) {
 								font-size: 2em !important;
-								padding: 12vh 0 7vw!important;
-								@media(max-width: 1024px) {
-									padding: 12vh 0 7vw!important;
-								}
+								padding: 12vh 0 0vw!important;
 							}
 						}
 						> h4 {
@@ -268,8 +265,15 @@
 									padding: 0em 5em 1em 5em;
 								}
 								@media(max-width: 1024px) {
-									padding: 0 5em 6vh;
+									padding: 0 5em 10vh;
 									background-position-x: 10px!important;
+									@media  (max-width: 768px) and (orientation: landscape) {
+										padding: 0vh 5em 5vh;
+										font-size: 0.8em;
+									}
+								}
+								@media(max-width: 480px) {
+									padding: 0 5em 6vh;
 								}
 								letter-spacing: 1px;	
 								list-style-type: none;
@@ -277,16 +281,23 @@
 						}
 					}
 				}
+
 				> .slide1 {
 				background: url(../img/background/dots.png) 50% 50% repeat fixed, url(../img/background/dummyBg1.jpg) 50% 50%/cover no-repeat fixed;
 				background-position-y: 0vh;
 					> .upper_container {
+					height: auto;
 					width: 100%;
 					position: absolute;
 					top: -500px;
 					height: 40vh;
 					opacity: -10;
 					transition-timing-function: ease-in-out;
+					@media(max-width: 768px) {
+						@media all and (orientation: landscape) {
+							padding: 0px !important;
+						}
+					}
 						> h1 {
 						    font-size: 15vw;
 						    //font-weight: 400;
@@ -364,12 +375,12 @@
 						width: 100%;
 						@media(max-width: 1024px) {
 							padding: 40vh 40px;
-							background-color: rgba(0,0,0,0.5);
+							background-color: rgba(0,0,0,0.3);
 							height: 100vh;
 						}
 						@media(max-width: 1023px) {
 							padding: 28vh 40px;
-							background-color: rgba(0,0,0,0.5);
+							background-color: rgba(0,0,0,0.3);
 							height: 100vh;
 						}
 						> .m_content__ {
@@ -381,6 +392,12 @@
 						    box-sizing: border-box;
 						    width: 19%;
 						    cursor: pointer;
+						    padding: 0 0 5%;
+						    @media(max-height: 480px) {
+						    	a {
+
+						    	}
+						    }
 						    @media(max-width: 1023px) {
 								display: block !important;
 								width: 100%;
@@ -441,16 +458,9 @@
 								font-size: 2.1vw;
 								color: $white;
 								font-family: Roboto;
-								@media(max-width: 1023px) {
-										&:hover,
-										&:active {
-										&::before {
-											display: block;
-										}
-									}
-								}
+								
 								@media(max-width: 1024px) {
-								    font-size: 1.9em!important;
+								    font-size: 1.9em;
 								    &:hover,
 								  	&:active {
 								    	font-weight: bold;
@@ -750,6 +760,16 @@
 								position: absolute;
 								top: 40%;
 							}
+							@media(max-height: 600px) {
+								display: none;
+								position: absolute;
+								top: 50%;
+								> ul {
+									> li {
+										font-size: 0.7em !important;
+									}
+								}
+							}
 							> ul {
 								margin: 2em 0;
 								@media(max-width: 1024px) {
@@ -849,7 +869,7 @@
 							text-decoration: none;
 							@media(max-width: 768px) {
 								display: inline-block;
-								width: 40%;
+								width: 45%;
 								position: relative;
 								font-size: 1.2em;
 								font-weight: 100 !important;
@@ -916,6 +936,16 @@
 								display: none;
 								position: absolute;
 								top: 40%;
+							}
+							@media(max-height: 600px) {
+								display: none;
+								position: absolute;
+								top: 50%;
+								> ul {
+									> li {
+										font-size: 0.7em !important;
+									}
+								}
 							}
 							> ul {
 								margin: 2em 0;
@@ -992,6 +1022,10 @@
 							text-align: center;
 							font-size: 4em;
 							font-family: Roboto;
+							@media(max-height: 600px) {
+								font-size: 2.5em!important;
+								padding: 30px 0 0px!important;
+							}
 		    			}
 		    			> .e-separator {
 							display: block;
@@ -1000,11 +1034,17 @@
 						    margin: 5px auto;
 						    background: transparent url(../img/background/horizontalSeparator.png)50% 50% no-repeat;
 						}
-						> p {
+						> .__title {
 							font-size: 1.7em;
 							text-align: center;
 							font-family: Roboto;
 							color: $white;
+							@media(max-height: 600px) {
+								font-size: 0.9em !important;
+								display: inline-block;
+								width: 49%;
+								margin: 0px;
+							}
 						}
 						> .company_copyright {
 							margin: auto;
@@ -1032,6 +1072,10 @@
 								font-family: Roboto;
 								color: $white;
 								text-align: center;
+								@media(max-height: 600px) {
+									padding: 5px 0;
+									margin: 0 0 5px 0;
+								}
 							}
 							> div {
 								color: red;

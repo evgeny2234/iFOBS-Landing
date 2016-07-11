@@ -197,7 +197,7 @@ $('#navBARbuttonMenu').click(function(){
 
 //Плавное появление IFOBS, ДОБРО ПОЖАЛОВАТЬ В ИНТЕРНЕТ-БАНКИНГ
 $( ".upper_container" ).animate({
-    top: "100px",
+    top: "10vh",
     opacity: 1
   }, 3000, function() {
   	$( "#welcomeMessage" ).animate({
