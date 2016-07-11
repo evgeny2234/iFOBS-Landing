@@ -158,9 +158,8 @@ $('.title-mob-cont').click(function(){
 
 	$(this).addClass('active_h_item');
 	
-	var title_mob_cont = $(this).data('containernum');
 	$(".addon-cont").removeClass('appear_menu');
-	$(".addon-container-"+title_mob_cont).addClass('appear_menu');
+	$(".addon-container-"+afterNum).addClass('appear_menu');
 })
 
 //Опускаем/поднимаем менюшку
@@ -214,23 +213,23 @@ $( ".upper_container" ).animate({
 		$( ".m_content_1" ).animate({
 		    top: "0px",
 		    opacity: 1
-		  }, 1500, function() {
+		  }, 900, function() {
 		  	$( ".m_content_2" ).animate({
 		  		top: "0px",
 		   		opacity: 1
-		  	}, 1500, function() {
+		  	}, 900, function() {
 		  		$( ".m_content_3" ).animate({
 			  		top: "0px",
 			   		opacity: 1
-			    }, 1500, function() {
+			    }, 900, function() {
 		  			$( ".m_content_4" ).animate({
 				  		top: "0px",
 				   		opacity: 1
-				   	}, 1500, function() {
+				   	}, 900, function() {
 			  			$( ".m_content_5" ).animate({
 					  		top: "0px",
 					   		opacity: 1
-		  				}, 1500);
+		  				}, 900);
 		  			});
 		  		});
 		  	});

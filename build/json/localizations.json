@@ -34,7 +34,7 @@
         }
       ],
       "welcomeMessage": "Добро пожаловать в интернет-банкинг",
-      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS <i class=\"arrow_down\"></i>"
+      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS <i class=\"arrow_down visibleArrow\"></i>"
     },
     "slides": {
       "advantages": {
@@ -177,7 +177,7 @@
         "slideHeader": "<b>Безопасность</b>",
         "slideLists": [
           {
-            "title": "Базовый уровень безопасности <i class=\"arrow_down\"></i>",
+            "title": "Базовый уровень безопасности <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -231,7 +231,7 @@
               }
             ]},
           {
-            "title": "Частным клиентам <i class=\"arrow_down\"></i>",
+            "title": "Частным клиентам <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -304,7 +304,7 @@
         }
       ],
       "welcomeMessage": "Вітаємо в інтернет-банкінгу",
-      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS <i class=\"arrow_down\"></i>"
+      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS <i class=\"arrow_down visibleArrow\"></i>"
     },
     "slides": {
       "advantages": {
@@ -447,7 +447,7 @@
         "slideHeader": "<b>Безпека</b>",
         "slideLists": [
           {
-            "title": "Базовий рівень безпеки <i class=\"arrow_down\"></i>",
+            "title": "Базовий рівень безпеки <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -501,7 +501,7 @@
               }
             ]},
           {
-            "title": "Приватним клієнтам <i class=\"arrow_down\"></i>",
+            "title": "Приватним клієнтам <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -717,7 +717,7 @@
         "slideHeader": "<b>Security</b>",
         "slideLists": [
           {
-            "title": "Basic security level <i class=\"arrow_down\"></i>",
+            "title": "Basic security level <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -771,7 +771,7 @@
               }
             ]},
           {
-            "title": "For private customers <i class=\"arrow_down\"></i>",
+            "title": "For private customers <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
