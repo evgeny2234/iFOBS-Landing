@@ -362,6 +362,28 @@ $(".js-page-control").on("click", function (event) {
 	$('html, body').animate({scrollTop: top}, 2000);
 });
 
+var dir;
+$("body, html").swipe({
+  swipe:function(event, direction, distance, duration, fingerCount) {
+   // console.log("You swiped " + direction );
+    if(direction=="up")
+    {
+    	dir = direction;
+    	if(duration<=1000) {
+    		onWheel()
+    	}
+    }
+    if(direction=="down")
+    {
+    	dir = direction;
+    	if(duration<=1000) {
+    		onWheel()
+    	}
+    }
+  }
+});
+
+
 //плавный скролл по колесику
 var elem = document.getElementById('body');
     if (elem.addEventListener) {
@@ -393,7 +415,7 @@ var elem = document.getElementById('body');
 			return;
 		}
 		listener = true;
-	    if(delta<0) {
+	    if((delta<0) || (dir=="down")) {
 			if(counter>1) {
 				back_parallax_up(counter);  //эффект параллакса для фона при прокрутке вверх
 				z_inverse_add();
@@ -409,7 +431,7 @@ var elem = document.getElementById('body');
 		    		listener = false;
 		    	}
 	    }
-	    if(delta>0) {
+	    if((delta>0) || (dir=="up")){
 	    	if(counter<=6) {
 	 			z_inverse_remove()
 	    		counter++;

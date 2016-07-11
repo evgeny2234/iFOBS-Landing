@@ -34,7 +34,7 @@
         }
       ],
       "welcomeMessage": "Добро пожаловать в интернет-банкинг",
-      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS"
+      "learnMore": "УЗНАЙТЕ БОЛЬШЕ ОБ iFOBS <i class=\"arrow_down visibleArrow\"></i>"
     },
     "slides": {
       "advantages": {
@@ -44,26 +44,26 @@
             "priority": "first",
             "title": "Опыт",
             "list": [
-              "<b>13 лет</b><br/> на рынке",
-              "Более<br/> <b>1 000 000</b><br/> пользователей",
+              "<b>13 лет</b> на рынке",
+              "Более <b>1 000 000</b> пользователей",
               "В <b>62</b> банках"
             ]},
           {
             "priority": "second",
             "title": "Интеграция",
             "list": [
-              "Автоматизированные <br/> банковские системы",
-              "Учетные системы <br/> предприятия",
+              "Автоматизированные  банковские системы",
+              "Учетные системы  предприятия",
               "CRM-системы",
-              "Карточные системы <br/> и процессинги",
+              "Карточные системы  и процессинги",
               "Провайдеры услуг"
             ]},
           {
             "priority": "third",
             "title": "Безопасность",
             "list": [
-              "На уровне клиента <br/> и на уровне банка",
-              "Базовый и <br/> дополнительный пакеты",
+              "На уровне клиента  и на уровне банка",
+              "Базовый и  дополнительный пакеты",
               "Проверенные временем и новейшие технологии"
             ]},
           {
@@ -80,14 +80,14 @@
             "title": "Дизайн",
             "list": [
               "Современный дизайн",
-              "Интуитивно <br/> понятный <br/> интерфейс",
-              "Поддержка <br/> корпоративного <br/> стиля банка"
+              "Интуитивно понятный интерфейс",
+              "Поддержка корпоративного стиля банка"
             ]
           }
         ]},
       "bankservices": {
         "svgTemplate": "true",
-        "slideHeader": "Сервисы <br/> <b>для банков</b>",
+        "slideHeader": "Сервисы  <b>для банков</b>",
         "slideLists": [
           {
             "title": "",
@@ -177,7 +177,7 @@
         "slideHeader": "<b>Безопасность</b>",
         "slideLists": [
           {
-            "title": "<b>Базовый</b> уровень безопасности",
+            "title": "Базовый уровень безопасности <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -193,7 +193,7 @@
               }
             ]},
           {
-            "title": "<b>Дополнительный</b> уровень",
+            "title": "Дополнительный уровень <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -215,7 +215,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "<b>Корпоративным</b> клиентам",
+            "title": "Корпоративным клиентам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -231,7 +231,7 @@
               }
             ]},
           {
-            "title": "<b>Частным</b> клиентам",
+            "title": "Частным клиентам <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -259,9 +259,9 @@
           "phoneNumber": "+38 (057) 760-13-67",
           "email": "e-mail: ",
           "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
-          "kharkivAddress": "Харьков, Украина <br> ул. Тобольская, 42А",
+          "kharkivAddress": "Харьков, Украина ул. Тобольская, 42А",
           "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
-          "kyivAddress": "Киев, Украина <br> ул. Пушкинская, 27",
+          "kyivAddress": "Киев, Украина ул. Пушкинская, 27",
           "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
           "copy": "Компания CS",
           "copyLink": "http://csltd.com.ua"
@@ -304,7 +304,7 @@
         }
       ],
       "welcomeMessage": "Вітаємо в інтернет-банкінгу",
-      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS"
+      "learnMore": "ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО iFOBS <i class=\"arrow_down visibleArrow\"></i>"
     },
     "slides": {
       "advantages": {
@@ -314,26 +314,26 @@
             "priority": "first",
             "title": "Досвід",
             "list": [
-              "<b>13 років </b><br/> на ринку",
-              "Понад <br/> <b>1 000 000</b><br/> користувачів",
+              "<b>13 років </b> на ринку",
+              "Понад  <b>1 000 000</b> користувачів",
               "У <b>62</b> банках"
             ]},
           {
             "priority": "second",
             "title": "Інтеграція",
             "list": [
-              "Автоматизовані  <br/> банківські системи",
-              "Облікові системи <br/> підприємства",
+              "Автоматизовані  банківські системи",
+              "Облікові системи  підприємства",
               "CRM-системи",
-              "Карткові системи <br/> і процесинги",
+              "Карткові системи  і процесинги",
               "Провайдери послуг"
             ]},
           {
             "priority": "third",
             "title": "Безпека",
             "list": [
-              "На рівні клієнта <br/> й на рівні банку",
-              "Базовий і <br/> додатковий пакети",
+              "На рівні клієнта  й на рівні банку",
+              "Базовий і  додатковий пакети",
               "Перевірені часом та новітні технології"
             ]},
           {
@@ -350,14 +350,14 @@
             "title": "Дизайн",
             "list": [
               "Сучасний дизайн",
-              "Інтуїтивно <br/> зрозумілий <br/> інтерфейс",
-              "Підтримка <br/> корпоративного <br/> стилю банку"
+              "Інтуїтивно зрозумілий інтерфейс",
+              "Підтримка корпоративного стилю банку"
             ]
           }
         ]},
       "bankservices": {
         "svgTemplate": "true",
-        "slideHeader": "Сервіси <br> <b>для банків</b>",
+        "slideHeader": "Сервіси <b>для банків</b>",
         "slideLists": [
           {
             "title": "",
@@ -447,7 +447,7 @@
         "slideHeader": "<b>Безпека</b>",
         "slideLists": [
           {
-            "title": "<b>Базовий</b> рівень безпеки",
+            "title": "Базовий рівень безпеки <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -463,7 +463,7 @@
               }
             ]},
           {
-            "title": "<b>Додатковий</b> рівень",
+            "title": "Додатковий рівень <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -485,7 +485,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "<b>Корпоративним</b> клієнтам",
+            "title": "Корпоративним клієнтам <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -501,7 +501,7 @@
               }
             ]},
           {
-            "title": "<b>Приватним </b> клієнтам",
+            "title": "Приватним клієнтам <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -529,9 +529,9 @@
           "phoneNumber": "+38 (057) 760-13-67",
           "email": "e-mail: ",
           "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
-          "kharkivAddress": "Харків, Україна <br> вул. Тобольська, 42А",
+          "kharkivAddress": "Харків, Україна вул. Тобольська, 42А",
           "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
-          "kyivAddress": "Київ, Україна <br> вул. Пушкінська, 27",
+          "kyivAddress": "Київ, Україна вул. Пушкінська, 27",
           "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
           "copy": "Компанія CS",
           "copyLink": "http://csltd.com.ua/uk/golovna.html"
@@ -574,7 +574,7 @@
         }
       ],
       "welcomeMessage": "Welcome to online banking",
-      "learnMore": "LEARN MORE ABOUT iFOBS"
+      "learnMore": "LEARN MORE ABOUT iFOBS <i class=\"arrow_down\"></i>"
     },
     "slides": {
       "advantages": {
@@ -584,26 +584,26 @@
             "priority": "first",
             "title": "Experience",
             "list": [
-              "<b>13 years</b><br/> on the market",
-              "More than<br/> <b>1 000 000</b><br/> users",
+              "<b>13 years</b> on the market",
+              "More than <b>1 000 000</b> users",
               "In <b>62</b> banks"
             ]},
           {
             "priority": "second",
             "title": "Integration",
             "list": [
-              "Automated <br/> banking systems",
-              "Accounting systems <br/> of enterprises",
+              "Automated  banking systems",
+              "Accounting systems  of enterprises",
               "CRM systems",
-              "Card systems <br/> and processing",
+              "Card systems  and processing",
               "Service providers"
             ]},
           {
             "priority": "third",
             "title": "Safety",
             "list": [
-              "At the customer and <br/> at the bank level",
-              "Standard and additional <br/> packages",
+              "At the customer and  at the bank level",
+              "Standard and additional  packages",
               "Time-proven and newest technologies"
             ]},
           {
@@ -717,7 +717,7 @@
         "slideHeader": "<b>Security</b>",
         "slideLists": [
           {
-            "title": "<b>Basic</b> security level",
+            "title": "Basic security level <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "browser",
@@ -733,7 +733,7 @@
               }
             ]},
           {
-            "title": "<b>Additional</b> protection",
+            "title": "Additional protection <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "usb",
@@ -755,7 +755,7 @@
         "slideHeader": "iFOBS<b>.Mobile</b>",
         "slideLists": [
           {
-            "title": "For <b>Corporate</b> customers",
+            "title": "For Corporate customers <i class=\"arrow_down\"></i>",
             "list": [
               {
                 "icon": "bills",
@@ -771,7 +771,7 @@
               }
             ]},
           {
-            "title": "For <b>private</b> customers",
+            "title": "For private customers <i class=\"arrow_down visibleArrow\"></i>",
             "list": [
               {
                 "icon": "cardinfo",
@@ -799,9 +799,9 @@
           "phoneNumber": "+38 (057) 760-13-67",
           "email": "e-mail: ",
           "emailAddress": "&#099;&#115;&#108;&#116;&#100;&#064;&#099;&#115;&#108;&#116;&#100;&#046;&#099;&#111;&#109;&#046;&#117;&#097;",
-          "kharkivAddress": "Khakiv, Ukraine <br> Toboloskaya street 42-А",
+          "kharkivAddress": "Khakiv, Ukraine Toboloskaya street 42-А",
           "kharkivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.4673733735333!2d36.223606459972004!3d50.031318531502606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc0b074822a66654e!2z0JrQvtC80L_QsNC90LjRjyBDUw!5e0!3m2!1sru!2sua!4v1428584934393",
-          "kyivAddress": "Kyiv, Ukraine <br> Pushkinskaya street 27",
+          "kyivAddress": "Kyiv, Ukraine Pushkinskaya street 27",
           "kyivMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.2282516664577!2d30.518142077365106!3d50.44272102564889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a288ac65%3A0xd1a72421d58ecc36!2z0LLRg9C7LiDQn9GD0YjQutGW0L3RgdGM0LrQsCwgMjcsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1428585083436",
           "copy": "CS Ltd",
           "copyLink": "http://csltd.com.ua/en/home1.html"

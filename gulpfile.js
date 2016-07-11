@@ -163,6 +163,9 @@ var gulp = require('gulp'),
 	    watch([path.watch.fonts], function(event, cb) {
 	        gulp.start('fonts:build');
 	    });
+	     watch([path.watch.json], function(event, cb) {
+	        gulp.start('json:build');
+	    });
 	});
 
 	gulp.task('webserver', function () {
