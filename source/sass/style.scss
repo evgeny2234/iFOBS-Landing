@@ -239,7 +239,7 @@
 							font-family: Roboto;
 							@media(max-width: 1024px) {
 								font-size: 2em !important;
-								padding: 12vh 0 0vw!important;
+								padding: 12vh 0 3vh!important;
 							}
 						}
 						> h4 {
@@ -366,6 +366,11 @@
 	    					font-size: 2em!important;
 	    					z-index: 1;
 						}
+						@media(max-width: 768px) {
+							@media all and (orientation: landscape) {
+								margin-bottom: 0vh;
+							}
+						}
 					}
 					& > .monitor_content {  //мтили для мониторов ПК
 						display: block;
@@ -379,7 +384,7 @@
 							height: 100vh;
 						}
 						@media(max-width: 1023px) {
-							padding: 28vh 40px;
+							padding: 30vh 40px 0;
 							background-color: rgba(0,0,0,0.3);
 							height: 100vh;
 						}
@@ -393,11 +398,21 @@
 						    width: 19%;
 						    cursor: pointer;
 						    padding: 0 0 5%;
-						    @media(max-height: 480px) {
-						    	a {
+						    @media(max-width: 768px) {
+								@media all and (orientation: landscape) {
+									padding-bottom: 0vh;
+									& > .sec_slide_menu {
+										font-size: 1.2em;
+									}
+									& > ul {
+										& > li {
+											font-size: 0.7em !important;
+											margin: 5px 0 5px 0 !important;
+										}
+									}
+								}
+							}
 
-						    	}
-						    }
 						    @media(max-width: 1023px) {
 								display: block !important;
 								width: 100%;
@@ -455,12 +470,11 @@
 								}
 							> a {
 								text-align: left;
-								font-size: 2.1vw;
+								font-size: 2.5vw;
 								color: $white;
 								font-family: Roboto;
-								
-								@media(max-width: 1024px) {
-								    font-size: 1.9em;
+								@media(max-width: 1023px) {
+								    font-size: 1.5em;
 								    &:hover,
 								  	&:active {
 								    	font-weight: bold;
@@ -496,7 +510,7 @@
 								    color: $white;
 								    @media(max-width: 1024px) {
 									    margin: 15px 0;
-									    font-size: 1.6vh;
+									    font-size: 1.7vh;
 									    letter-spacing: 1px;
 									    white-space: pre-line;
 
@@ -1086,7 +1100,7 @@
 							}
 						}
 						> .company_copyright {
-							padding: 20px 0;
+							padding: 0 0 10px 0;
 						}
 					}
 				}
