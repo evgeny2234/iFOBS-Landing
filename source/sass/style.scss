@@ -16,7 +16,7 @@
 			font: 14px roboto,Arial,sans-serif;
 		    color: $white;
 		    transition: 2s;
-			/*.menu_up_down {
+			.menu_up_down {
 				position: fixed;
 				height: 5vw;
 				width: 5vw;
@@ -36,7 +36,7 @@
 					transition: 0.3s;
 					opacity: 0.4;
 				}
-			}*/
+			}
 			header {
 				transition: 0.3s;
 				position: fixed;
@@ -63,7 +63,7 @@
 						}
 					}
 				}
-				/*> nav {
+				> nav {
 					border-radius: 0px !important; 
 					background-color: rgba(0,0,0,.8) !important;
 					border: 0px !important;
@@ -140,6 +140,7 @@
 									}
 									@media(max-width: 767px) {
 										font-size: 3vw;
+										padding: 5px 5px;
 									}
 									&:hover {
 										opacity: 1;
@@ -161,13 +162,17 @@
 							}
 						}
 					}
-				}*/
+				}
 				> .localizations {
 					float: left;
+					margin: -15px 0;
+					top: 75px;
+   					position: fixed;
 					@media(max-width: 768px) {
 						position: absolute;
 						left: 0px;
-						margin: 15px;
+						margin: 0;
+						top: 50px;
 					}
 					@media(max-width: 767px) {
 						position: absolute;
@@ -192,21 +197,24 @@
 						&:focus {
 							opacity: 0.4;
 							transition: 0.5s;
-						}
+						} 
 					}
 				}
 				> .simple_logo {
 					z-index: -1;
 					position: absolute;
 					right: 0px;
-					margin: 15px;
+					margin: -10px 15px 0 0;
 					font-size: 2.5em;
-					//text-shadow: 1px 1px 5px rgba(0,0,0,.7);
 					color: $white;
 					font-family: roboto;  
-					@media(max-width: 768px) {
+					@media (max-width: 480px) {
+						display: none;
 					}
-				}
+					@media (max-height: 480px) {
+						display: none; 
+					}
+				} 
 			}
 			> main {
 				.slide {
@@ -237,10 +245,23 @@
 						> h3 {
 							color: $white;
 							font-family: Roboto;
+							padding: 150px 0 100px;
+
 							@media(max-width: 1024px) {
-								font-size: 1.6em !important;
-								padding: 12vh 0 3vh!important;
+								padding: 14vh 0 0;
+						  	 	font-size: 6vw;
+						   		margin: 5vh 0;
+						   		@media all and (orientation: landscape) {
+						   			font-size: 4.5vw;
+						   		}
 							}
+							@media (max-width: 480px) {
+								padding: 40px 0 10px;
+							}
+							@media (max-height: 480px) {
+								padding: 40px 0 10px;
+							}
+							
 						}
 						> h4 {
 							color: $white;
@@ -269,7 +290,9 @@
 									background-position-x: 10px!important;
 								}
 								@media  (max-width: 768px) and (orientation: landscape) {
-									padding: 0vh 6em 5vh;
+									//padding: 0vh 6em 3vh;
+									display: inline-block;
+									height: 26px;
 									font-size: 0.8em;
 								}
 								@media	(max-width: 480px) {
@@ -349,44 +372,41 @@
 				overflow: hidden;
 				background: url(../img/background/dots.png) 50% 50% repeat fixed, url(../img/background/dummyBg2.jpg) 50% 50%/cover no-repeat fixed;
 				background-position-y: 0vh;
-					> h3 {
-						position: absolute;
-						text-transform: uppercase;
-						text-align: center;
-		    			padding: 5vh;
-		    			font-size: 4vw;
-		    			//font-weight: 400;
-		    			text-shadow: 1px 1px 5px rgba(0,0,0,.7);
-		    			font-family: Roboto;
-		    			color: $white;
-		    			width: 100%;
-		    			@media(max-width: 1024px) {
-							padding: 15vh 0 0 0!important;
-							margin-bottom: 10vh;
-	    					font-size: 1.6em!important;
-	    					z-index: 1;
-						}
-						@media(max-width: 768px) {
-							@media all and (orientation: landscape) {
-								margin-bottom: 0vh;
-							}
-						}
-					}
+
 					& > .monitor_content {  //мтили для мониторов ПК
 						display: block;
 						position: relative;
-						padding: 30vh 40px;
 						margin: 0px !important;
 						width: 100%;
 						@media(max-width: 1024px) {
-							padding: 40vh 40px;
 							background-color: rgba(0,0,0,0.3);
 							height: 100vh;
 						}
 						@media(max-width: 1023px) {
-							padding: 30vh 40px 0;
 							background-color: rgba(0,0,0,0.3);
 							height: 100vh;
+						}
+						> h3 {
+						text-transform: uppercase;
+						text-align: center;
+						font-family: Roboto;
+						color: $white;
+						padding: 150px 0 100px;
+						font-size: 5vw;
+							@media(max-width: 1024px) {
+								padding: 14vh 0 0;
+						  	 	font-size: 6vw;
+						   		margin: 5vh 0;
+						   		@media all and (orientation: landscape) {
+						   			font-size: 4.5vw;
+						   		}
+							}
+							@media (max-width: 480px) {
+								padding: 40px 0 10px;
+							}
+							@media (max-height: 480px) {
+								padding: 40px 0 10px;
+							}
 						}
 						> .m_content__ {
 							opacity: 0;
@@ -398,7 +418,9 @@
 						    width: 19%;
 						    cursor: pointer;
 						    padding: 0 0 5%;
+						    
 						    @media(max-width: 768px) {
+
 								@media all and (orientation: landscape) {
 									padding-bottom: 1vh;
 									& > .sec_slide_menu {
@@ -414,7 +436,8 @@
 							}
 						    @media(max-width: 1023px) {
 								display: block !important;
-								width: 100%;
+								width: 85%;
+								margin: 0 3em;
 								& > a {
 									text-decoration: underline;
 									&::before { 
@@ -427,46 +450,46 @@
 									}
 								}
 							}
-							&:nth-child(1) {
-									top: -400px;
-									> a {
-										&::before {
-											content: "1";
-										}
+							&:nth-of-type(1) {
+								top: -400px;
+								> a {
+									&::before {
+										content: "1";
 									}
 								}
-								&:nth-child(2) {
-									top: 400px;
-									> a {
-										&::before {
-											content: "2";
-										}
+							}
+							&:nth-of-type(2) {
+								top: 400px;
+								> a {
+									&::before {
+										content: "2";
 									}
 								}
-								&:nth-child(3) {
-									top: -400px;
-									> a {
-										&::before {
-											content: "3";
-										}
+							}
+							&:nth-of-type(3) {
+								top: -400px;
+								> a {
+									&::before {
+										content: "3";
 									}
 								}
-								&:nth-child(4) {
-									top: 400px;
-									> a {
-										&::before {
-											content: "4";
-										}
+							}
+							&:nth-of-type(4) {
+								top: 400px;
+								> a {
+									&::before {
+										content: "4";
 									}
 								}
-								&:nth-child(5) {
-									top: -400px;
-									> a {
-										&::before {
-											content: "5";
-										}
+							}
+							&:nth-of-type(5) {
+								top: -400px;
+								> a {
+									&::before {
+										content: "5";
 									}
 								}
+							}
 							> a {
 								text-align: left;
 								font-size: 2.5vw;
@@ -535,10 +558,8 @@
 					> .cont {
 						left: 10%;
 						> h3 {
-							padding: 100px 0 50px 0;
 							text-transform: uppercase;
 							text-align: center;
-							font-size: 4em;
 							font-family: Roboto;
 						}
 						> ul {
@@ -584,10 +605,8 @@
 					> .cont {
 						left: 20%;
 						> h3 {
-							padding: 100px 0 50px 0;
 							text-transform: uppercase;
 							text-align: center;
-							font-size: 4em;
 							font-family: Roboto;
 						}
 						> ul {
@@ -630,10 +649,8 @@
 					> .cont {
 						right: 10%;
 						> h3 {
-							padding: 100px 0 50px 0;
 							text-transform: uppercase;
 							text-align: center;
-							font-size: 4em;
 							font-family: Roboto;
 						}
 						> ul {
@@ -686,10 +703,8 @@
 					> .cont {
 						right: 25%;
 						> h3 {
-							padding: 100px 0 40px 0;
 							text-transform: uppercase;
 							text-align: center !important;
-							font-size: 4em;
 							font-family: Roboto;
 						}
 
@@ -710,7 +725,11 @@
 								display: inline-block;
 								width: 48%;
 								position: relative;
-								font-size: 1.2em;
+								//font-size: 0.9em;
+								font-size: 2.4vh;
+								@media all and (orientation: landscape) {
+							    	font-size: 2.4vw;
+							    }
 								> b {
 									font-weight: 100 ;
 								}
@@ -725,7 +744,7 @@
 								> .arrow_down {
 									display: block;
 									visibility: hidden;
-									margin: 20px auto 0;
+									margin: 10px auto 0;
 									width: 22px;
 									height: 22px;
 									background: transparent url(../img/background/darrow.png) no-repeat;
@@ -754,7 +773,10 @@
 							}
 							@media(max-width: 480px) {
 								left: 0px;
-							    width: 75%;
+							    width: 65%;
+							    @media all and (orientation: landscape) {
+							    	width: 50%;
+							    }
 							}
 							   
 						}
@@ -765,12 +787,16 @@
 							}
 							@media(max-width: 480px) {
 								right: 0px;
-							    width: 75%;
+							    width: 65%;
+							    @media all and (orientation: landscape) {
+							    	width: 50%;
+							    }
 							}
 							    
 						}
 						> .left_container,
 						  .right_container {
+						  	margin: 2em 0px 0px 40px;
 						  	@media(max-width: 768px) {
 								display: none;
 								position: absolute;
@@ -779,7 +805,7 @@
 							@media(max-height: 600px) {
 								display: none;
 								position: absolute;
-								top: 50%;
+								top: 40%;
 								> ul {
 									> li {
 										font-size: 0.7em !important;
@@ -795,8 +821,6 @@
 								}
 								@media(max-width: 768px) {
 									border-left: 1px solid $white !important;
-								    padding-left: 10px !important;
-								    margin-left: 40px !important;
 								    width: 100%;
 								}
 								> li {
@@ -869,10 +893,8 @@
 					> .cont {
 						right: 30%;
 						> h3 {
-							padding: 100px 0 50px 0;
 							text-transform: uppercase;
 							text-align: center;
-							font-size: 4em;
 							font-family: Roboto;
 						}
 						> a {
@@ -890,7 +912,11 @@
 								display: inline-block;
 								width: 45%;
 								position: relative;
-								font-size: 1.2em;
+								//font-size: 0.9em;
+								font-size: 2.4vh;
+								@media all and (orientation: landscape) {
+							    	font-size: 2.4vw;
+							    }
 								font-weight: 100 !important;
 								> b {
 									font-weight: 100 !important;
@@ -906,7 +932,7 @@
 								> .arrow_down {
 									display: block;
 									visibility: hidden;
-									margin: 20px auto 0;
+									margin: 10px auto 0;
 									width: 22px;
 									height: 22px;
 									background: transparent url(../img/background/darrow.png) no-repeat;
@@ -934,7 +960,10 @@
 							}
 							@media(max-width: 480px) {
 								left: 0px;
-							    width: 75%;
+							    width: 65%;
+							    @media all and (orientation: landscape) {
+							    	width: 50%;
+							    }
 							}
 							   
 						}
@@ -945,12 +974,16 @@
 							}
 							@media(max-width: 480px) {
 								right: 0px;
-							    width: 75%;
+							    width: 65%;
+							    @media all and (orientation: landscape) {
+							    	width: 50%;
+							    }
 							}
 							    
 						}
 						> .left_container,
 						  .right_container {
+						  	margin: 2em 0px 0px 40px;
 						  	@media(max-width: 768px) {
 								display: none;
 								position: absolute;
@@ -959,7 +992,7 @@
 							@media(max-height: 600px) {
 								display: none;
 								position: absolute;
-								top: 50%;
+								top: 40%;
 								> ul {
 									> li {
 										font-size: 0.7em !important;
@@ -975,8 +1008,6 @@
 								}
 								@media(max-width: 768px) {
 									border-left: 1px solid $white !important;
-								    padding-left: 10px !important;
-								    margin-left: 40px !important;
 								    width: 100%;
 								}
 								> li {
@@ -1039,10 +1070,8 @@
 							margin-left: 0px !important;
 		    			}
 		    			> h3 {
-		    				padding: 100px 0 50px 0;
 							text-transform: uppercase;
 							text-align: center;
-							font-size: 4em;
 							font-family: Roboto;
 							@media(max-height: 600px) {
 								font-size: 2.5em!important;
