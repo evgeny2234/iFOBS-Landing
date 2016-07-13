@@ -18,8 +18,8 @@
 		    transition: 2s;
 			.menu_up_down {
 				position: fixed;
-				height: 5vw;
-				width: 5vw;
+				height: 40px;
+				width: 40px;
 				display: block;
 				background: transparent url(../img/background/menu.png) no-repeat; 
 				z-index: 1002;
@@ -112,6 +112,7 @@
 								}
 							}
 						}
+
 						> ul {
 							display: inline-block;
 						}
@@ -133,17 +134,20 @@
 									font-size: 1vw;
 		    						font-weight: 500;
 									transition: 0.3s;
-									opacity: .6;
+									opacity: 1;
 									color: $white;
 									@media(max-width: 1600px) {
 										font-size: 1.3vw;
+									}
+									@media(max-width: 768px) {
+										opacity: 1;
 									}
 									@media(max-width: 767px) {
 										font-size: 3vw;
 										padding: 5px 5px;
 									}
 									&:hover {
-										opacity: 1;
+										opacity: 0.5;
 										color: $white;
 										transition: 0.3s;
 									}
@@ -237,6 +241,7 @@
 					    background-color: rgba(33,41,27,.7);
 						height: 100%;
 						z-index: 1;
+						top: 0px;
 						@media(max-width: 1024px) {
 							width: 100% !important;
 							left: 0% !important;
@@ -245,10 +250,11 @@
 						> h3 {
 							color: $white;
 							font-family: Roboto;
-							padding: 150px 0 100px;
+							padding: 80px 0 30px;
+							font-size: 3vw;
 
 							@media(max-width: 1024px) {
-								padding: 14vh 0 0;
+								padding: 8vh 0 0;
 						  	 	font-size: 6vw;
 						   		margin: 5vh 0;
 						   		@media all and (orientation: landscape) {
@@ -256,10 +262,10 @@
 						   		}
 							}
 							@media (max-width: 480px) {
-								padding: 40px 0 10px;
+								padding: 50px 0 10px;
 							}
 							@media (max-height: 480px) {
-								padding: 40px 0 10px;
+								padding: 50px 0 10px;
 							}
 							
 						}
@@ -269,25 +275,47 @@
 						}
 						> ul {
 							margin: 2em 0;
+							padding: 0px 20px;
 							@media(max-width: 1024px) {
-								margin: 30px 0;
+								width: 80%;
+								margin: auto;
+								display: block;
 							}
 							@media(max-width: 768px) {
+								width: 100%;
 								border-left: 1px solid $white !important;
-							    padding-left: 10px !important;
+							    padding-left: 25px !important;
 							    margin-left: 40px !important;
+							    @media  (max-width: 768px) and (orientation: landscape) {
+							    	 padding-left: 10px !important;
+							    }
+							}
+							@media(max-width: 480px) {
+							    padding-left: 0px !important;
 							}
 							> li {
 								color: $white;
 								font-family: Roboto;
-								font-size: 1.6vh;
+								font-size: 1.8vh;
 								padding: 0em 5em 3.5em;
 								&:last-child {
-									padding: 0em 6em 1em 6em;
+									padding: 0 5em 2em;
 								}
 								@media	(max-width: 1024px) {
-									padding: 0 6em 10vh;
+									padding: 0 0em 10vh 4em;
 									background-position-x: 10px!important;
+									&:last-child {
+										padding: 0 6em 2vh;
+									}
+								}
+								@media	(max-width: 768px) {
+									padding: 0 4em 10vh;
+									&:last-child {
+										padding: 0 4em 2vh;
+									}
+									@media  (max-width: 768px) and (orientation: landscape) {
+										padding: 0 5em 10vh !important;
+									}
 								}
 								@media  (max-width: 768px) and (orientation: landscape) {
 									//padding: 0vh 6em 3vh;
@@ -296,7 +324,7 @@
 									font-size: 0.8em;
 								}
 								@media	(max-width: 480px) {
-									padding: 0 6em 5vh;
+									padding: 0 4em 5vh;
 								}
 								letter-spacing: 1px;	
 								list-style-type: none;
@@ -408,7 +436,10 @@
 								padding: 40px 0 10px;
 							}
 						}
-						> .m_content__ {
+						> .content {
+							width: 90%;
+							margin: auto;
+							> .m_content__ {
 							opacity: 0;
 							display: inline-block;
 						    vertical-align: top;
@@ -439,7 +470,7 @@
 								width: 85%;
 								margin: 0 3em;
 								& > a {
-									text-decoration: underline;
+									//text-decoration: underline;
 									&::before { 
 									font-size: 60vh !important;
 									right: 10%;
@@ -498,12 +529,14 @@
 								@media(max-width: 1023px) {
 								    font-size: 1.5em;
 								    &:hover,
-								  	&:active {
+								  	&:active,
+								  	&:focus {
 								    	font-weight: bold;
+								    	text-decoration: none;
 								    }
 								}
 								&::before {
-									font-size: 31.4vw;
+									font-size: 28vw;
 									position: absolute;
 								    opacity: .2;
 								    font-weight: 700;
@@ -543,6 +576,8 @@
 								}
 							}
 						}
+						}
+						
 					}
 				}
 				> .slide3 {
@@ -721,12 +756,12 @@
 							color: $white;
 							text-decoration: none;
 							@media(max-width: 768px) {
-								text-decoration: underline;
+								text-decoration: none;
 								display: inline-block;
-								width: 48%;
+								width: 35%;
 								position: relative;
 								//font-size: 0.9em;
-								font-size: 2.4vh;
+								font-size: 2.1vh;
 								@media all and (orientation: landscape) {
 							    	font-size: 2.4vw;
 							    }
@@ -769,11 +804,11 @@
 						> .left_container {
 							@media(max-width: 768px) {
 								left: 0px;
-							    width: 60%;
+							    width: 80%;
 							}
 							@media(max-width: 480px) {
 								left: 0px;
-							    width: 65%;
+							    width: 80%;
 							    @media all and (orientation: landscape) {
 							    	width: 50%;
 							    }
@@ -796,44 +831,67 @@
 						}
 						> .left_container,
 						  .right_container {
-						  	margin: 2em 0px 0px 40px;
-						  	@media(max-width: 768px) {
+						  	//margin: 2em 0px 0px 40px;
+
+						  	@media (max-width: 768px) and (orientation: portrait) {
 								display: none;
 								position: absolute;
 								top: 40%;
+								margin: 2em 0px 0px 40px;
 							}
-							@media(max-height: 600px) {
+							@media (max-width: 768px) and (orientation: landscape) {
 								display: none;
 								position: absolute;
-								top: 40%;
-								> ul {
+						    	bottom: 10%;
+						    	margin: 2em 0px 0px 40px;
+						    	> ul {
 									> li {
 										font-size: 0.7em !important;
 									}
 								}
-							}
+						    }
+							
 							> ul {
 								margin: 2em 0;
+								padding: 0 15px;
 								@media(max-width: 1024px) {
-									width: 50%;
+									width: 65%;
 								    margin: auto;
-								    padding: 0.5em 0;
+								    padding: 0.5em 30px;
 								}
 								@media(max-width: 768px) {
 									border-left: 1px solid $white !important;
 								    width: 100%;
+								    padding: 0.5em 25px;
+								}
+								@media(max-width: 767px) {
+									padding: 0.5em 5px;
 								}
 								> li {
 									color: $white;
 									font-family: Roboto;
-									font-size: 1.6vh;
-									padding: 0 5em 4vh;
+									font-size: 1.9vh;
+									padding: 0em 5em 3.5em;
+									&:last-child {
+										padding: 0em 5em 1em 5em;
+									}
 									letter-spacing: 1px;	
 									list-style-type: none;
 									background-size: auto 30px !important;
 									@media(max-width: 1024px) {
-										padding: 0 5em 4vh;
+										padding: 0 4em 6vh 4em;
 										background-position-x: 10px!important;
+										&:last-child {
+											padding: 0em 4em 1em 4em;
+										}
+									}
+									@media(max-width: 768px) {
+										@media all and (orientation: landscape) {
+									    	padding: 0 4em 6vh 6em;
+									    }
+									}
+									@media(max-width: 480px) {
+										padding: 0 4em 6vh ;
 									}
 								}
 								&:nth-of-type(1) {
@@ -846,6 +904,7 @@
 										}
 										&:nth-child(3) {
 											background: url(../img/svg/writing.svg) 25px 0em no-repeat;
+											padding-bottom: 10px !important;
 										}
 									}
 								}
@@ -859,6 +918,7 @@
 										}
 										&:nth-child(3) {
 											background: url(../img/svg/otpdevice.svg) 25px 0em no-repeat;
+											padding-bottom: 10px !important;
 										}
 									}
 								}
@@ -910,10 +970,10 @@
 							text-decoration: none;
 							@media(max-width: 768px) {
 								display: inline-block;
-								width: 45%;
+								width: 35%;
 								position: relative;
 								//font-size: 0.9em;
-								font-size: 2.4vh;
+								font-size: 2.1vh;
 								@media all and (orientation: landscape) {
 							    	font-size: 2.4vw;
 							    }
@@ -956,11 +1016,11 @@
 						> .left_container {
 							@media(max-width: 768px) {
 								left: 0px;
-							    width: 60%;
+							    width: 80%;
 							}
 							@media(max-width: 480px) {
 								left: 0px;
-							    width: 65%;
+							    width: 80%;
 							    @media all and (orientation: landscape) {
 							    	width: 50%;
 							    }
@@ -983,37 +1043,44 @@
 						}
 						> .left_container,
 						  .right_container {
-						  	margin: 2em 0px 0px 40px;
-						  	@media(max-width: 768px) {
+						  	//margin: 2em 0px 0px 40px;
+						  	@media (max-width: 768px) and (orientation: portrait) {
 								display: none;
 								position: absolute;
 								top: 40%;
+								margin: 2em 0px 0px 40px;
 							}
-							@media(max-height: 600px) {
+							@media (max-width: 768px) and (orientation: landscape) {
 								display: none;
 								position: absolute;
-								top: 40%;
-								> ul {
+						    	bottom: 10%;
+						    	margin: 2em 0px 0px 40px;
+						    	> ul {
 									> li {
 										font-size: 0.7em !important;
 									}
 								}
-							}
+						    }
 							> ul {
 								margin: 2em 0;
+								padding: 0px 15px;
 								@media(max-width: 1024px) {
-									width: 50%;
+									width: 65%;
 								    margin: auto;
-								    padding: 0.5em 0;
+								    padding: 0.5em 30px;
 								}
 								@media(max-width: 768px) {
 									border-left: 1px solid $white !important;
 								    width: 100%;
+								    padding: 0.5em 25px;
+								}
+								@media(max-width: 767px) {
+									padding: 0.5em 5px;
 								}
 								> li {
 									color: $white;
 									font-family: Roboto;
-									font-size: 1.6vh;
+									font-size: 1.9vh;
 									padding: 0em 5em 3.5em;
 									&:last-child {
 										padding: 0em 5em 1em 5em;
@@ -1022,8 +1089,19 @@
 									list-style-type: none;
 									background-size: auto 30px !important;
 									@media(max-width: 1024px) {
-										padding: 0 5em 6vh;
+										padding: 0 4em 6vh 4em;
 										background-position-x: 10px!important;
+										&:last-child {
+											padding: 0em 4em 1em 4em;
+										}
+									}
+									@media(max-width: 768px) {
+										@media all and (orientation: landscape) {
+									    	padding: 0 4em 6vh 6em;
+									    }
+									}
+									@media(max-width: 480px) {
+										padding: 0 4em 6vh;
 									}
 								}
 								&:nth-of-type(1) {
@@ -1036,6 +1114,7 @@
 										}
 										&:nth-child(3) {
 											background: url(../img/svg/list.svg) 25px 0em no-repeat;
+											padding-bottom: 10px !important;
 										}
 									}
 								}
@@ -1049,6 +1128,7 @@
 										}
 										&:nth-child(3) {
 											background: url(../img/svg/moneyout.svg) 25px 0em no-repeat;
+											padding-bottom: 10px !important;
 										}
 									}
 								}

@@ -330,14 +330,14 @@ function back_parallax_up(counter) {
 	});
 	$('.slide'+counter).animate({
 		backgroundPositionY: '0vh'
-	}, 1900, function(){
+	}, 1500, function(){
 		
 	});
 }
 function back_parallax_down(counter) {
 	$('.slide'+counter).animate({
 		backgroundPositionY: '-25vh'
-	}, 1900, function(){
+	}, 1500, function(){
 	});
 }
 
@@ -352,14 +352,14 @@ $("#menu").on("click","a", function (event) {
 	//узнаем высоту от начала страницы до блока на который ссылается якорь
 		top = $(id).offset().top;
 	//анимируем переход на расстояние - top за 1500 мс
-	$('html, body').animate({scrollTop: top}, 2000);
+	$('html, body').animate({scrollTop: top}, 1500);
 });
 
 $(".js-page-control").on("click", function (event) {
 	event.preventDefault();
 	var id  = $(this).attr('href'),
 	top = $(id).offset().top;
-	$('html, body').animate({scrollTop: top}, 2000);
+	$('html, body').animate({scrollTop: top}, 1500);
 });
 
 var dir;
@@ -369,14 +369,14 @@ $("body, html").swipe({
     if(direction=="up")
     {
     	dir = direction;
-    	if(duration<=1000) {
+    	if(duration<=1500) {
     		onWheel()
     	}
     }
     if(direction=="down")
     {
     	dir = direction;
-    	if(duration<=1000) {
+    	if(duration<=1500) {
     		onWheel()
     	}
     }
@@ -423,7 +423,7 @@ var elem = document.getElementById('body');
 				counter--;
 				$('.contain_'+(counter+2)).addClass('cont_fixed');  //эффект парраллакса для темных блоков
 				slider_buttons(counter);
-	    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
+	    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){  //плавный скролл
 	    			listener = false;
 	    		});
 		    	}
@@ -441,7 +441,7 @@ var elem = document.getElementById('body');
 	    		if(counter==1) {
 	    			secondAnimation ();
 	    		}
-	    		$('body,html').animate({scrollTop: array[counter]}, 2000, function(){  //плавный скролл
+	    		$('body,html').animate({scrollTop: array[counter]}, 1500, function(){  //плавный скролл
 	    			listener = false;
 	    		});
 	    		back_parallax_down(counter); //эффект параллакса для фона при прокрутке вниз
