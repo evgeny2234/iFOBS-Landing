@@ -47,8 +47,13 @@
 					position: absolute;
 					top: 40vh;
 					right: 20px;
+					@media(max-width: 768px) {
+						width: 20px;
+						height: 20px;
+						top: 20vh;
+					}
 					> .s_button {
-						margin: 10px 0;
+						margin: 15px 0;
 						display: block;
 						width: 15px;
 						height: 15px;
@@ -56,6 +61,10 @@
 						background-color: rgba(255,255,255,0.2);
 						transition: 0.3s;
 						opacity: 0;
+						@media(max-width: 768px) {
+							width: 20px;
+							height: 20px;
+						}
 						&:hover,
 						&:active {
 							background-color: rgba(255,255,255,1);
@@ -456,11 +465,17 @@
 						    width: 19%;
 						    cursor: pointer;
 						    padding: 0 0 5%;
-						    
 						    @media(max-width: 768px) {
-
 								@media all and (orientation: landscape) {
 									padding-bottom: 1vh;
+									display: inline-block !important;
+									width: auto !important;
+									margin: 0px !important;
+									&:nth-of-type(5) {
+										> ul {
+											margin-right: 40px !important;
+										}
+									}
 									& > .sec_slide_menu {
 										font-size: 1.2em;
 									}
@@ -473,7 +488,7 @@
 								}
 							}
 						    @media(max-width: 1023px) {
-								display: block !important;
+								display: inline-block !important;
 								width: 85%;
 								margin: 0 3em;
 								& > a {
@@ -533,6 +548,11 @@
 								font-size: 2.5vw;
 								color: $white;
 								font-family: Roboto;
+								@media(max-width: 768px) {
+									@media all and (orientation: landscape) {
+										padding: 2vw;
+									}
+								}
 								&:hover,
 							  	&:active,
 							  	&:focus {
@@ -562,8 +582,13 @@
 									display: none;
 									padding-left: 15px;
 									margin-left: 15px;
-									//padding-left: 25px;
+								}
+								@media(max-width: 768px) {
 
+									@media all and (orientation: landscape) {
+										position: absolute;
+										margin-top: 30px;
+									}
 								}
 								> li {
 									list-style-type: none;
